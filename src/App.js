@@ -5,7 +5,6 @@ import './App.css';
 import {
   Carousel,
   CarouselItem,
-  CarouselCaption
 } from 'reactstrap';
 
 
@@ -223,7 +222,7 @@ var photos5 = [
     src: 'https://scontent-dft4-1.cdninstagram.com/t51.2885-15/e35/12816792_243506539317919_2117526303_n.jpg',
   },
   {
-    src: 'https://scontent-atl3-1.cdninstagram.com/t51.2885-15/e35/14717617_923797251098019_3287186501695176704_n.jpg'
+    src: 'https://scontent-atl3-1.cdninstagram.com/t51.2885-15/e35/19367874_320652865037475_9026784859661533184_n.jpg'
   },
 ];
 var photos6 = [
@@ -257,9 +256,6 @@ var photos8 = [
   },
   {
     src: 'https://scontent-atl3-1.cdninstagram.com/t51.2885-15/e35/19985444_280915535709063_2479917909166522368_n.jpg',
-  },
-  {
-    src: 'https://scontent-atl3-1.cdninstagram.com/t51.2885-15/e35/19228218_1884097801856133_907460511572951040_n.jpg'
   },
   {
     src: 'https://scontent-atl3-1.cdninstagram.com/t51.2885-15/e35/13166919_1237478906277317_1020585701_n.jpg'
