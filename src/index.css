@@ -1,0 +1,11 @@
+body {
+  background: linear-gradient(white ,#fff);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 0;
+  top: 0;
+  margin: 25;
+  marginleft: 10%;
+  marginRight: 10%;
+  font: 400 18px/1.5 "Lato", "Helvetica", "Segoe UI", Verdana, sans-serif;
+}

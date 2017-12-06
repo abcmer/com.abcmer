@@ -1,0 +1,11 @@
+.carousel {
+  width: 20%;
+  height: width;
+  margin: 0px;
+  display: inline-block;
+}
+
+.carousel.slide {
+  margin: 0px;
+  padding: 0px;
+}
