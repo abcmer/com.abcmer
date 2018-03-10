@@ -1,0 +1,15 @@
+.carousel {
+  margin: 0px;
+  display: inline-block;
+}
+
+.carousel.slide {
+  margin: 0px;
+  padding: 0px;
+  width: 25%;
+}
+
+img {
+  width: 100%;
+  border-bottom: 2px solid #D3D3D3;
+}

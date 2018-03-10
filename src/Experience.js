@@ -4,8 +4,9 @@ class Experience extends Component {
 
   render() {
     return (
+
       <div className="experience-content">
-        <h1>Experience</h1>
+        <h3>Under development</h3>
       </div>
     );
   }

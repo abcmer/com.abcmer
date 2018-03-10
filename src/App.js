@@ -4,48 +4,44 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import AppHeader from "./AppHeader"
-import About from "./About"
+import Home from "./Home"
 import TechnicalSkills from "./TechnicalSkills"
 import Experience from "./Experience"
 import Education from "./Education"
-import Interests from "./Interests"
 
 import './App.css';
 
 
 class App extends Component {
   render() {
-    return (
+    return (     
       <HashRouter>
         <div>
-          <AppHeader/>
-          <div className="app-body">
-            <ul className="nav-side-panel">
-              <NavLink exact to="/">
-                <li>About</li>
-              </NavLink>
-              <NavLink to="/TechnicalSkills">
-                <li>Interests</li>                
-              </NavLink>              
-              <NavLink to="/Experience">
-                <li>Experience</li>
-              </NavLink>              
-              <NavLink to="/Education">
-                <li>Education</li>
-              </NavLink>
-              <NavLink to="/Interests">
-                <li>Technical Skills</li>
-              </NavLink>  
-            </ul>
-            <div className="content">
-              <Route exact path="/" component={About}/>
-              <Route path="/TechnicalSkills" component={TechnicalSkills}/>
-              <Route path="/Experience" component={Experience}/>
-              <Route path="/Education" component={Education}/>              
-              <Route path="/Interests" component={Interests}/>              
+          <div className="header">
+            <div className="header-flex-container">
+              <div className="app-title">
+                <NavLink exact to="/"><h1>Adam Siemer</h1></NavLink>
+              </div>
+              <ul className="nav-bar">
+                <NavLink to="/TechnicalSkills">
+                  <li>Technical Skills</li>                
+                </NavLink>              
+                <NavLink to="/Experience">
+                  <li>Experience</li>   
+                </NavLink>              
+                <NavLink to="/Education">
+                  <li>Education</li>
+                </NavLink>
+              </ul>            
             </div>
-          </div>          
+            
+          </div>         
+          <div className="content">
+            <Route exact path="/" component={Home}/>
+            <Route path="/TechnicalSkills" component={TechnicalSkills}/>
+            <Route path="/Experience" component={Experience}/>
+            <Route path="/Education" component={Education}/>                          
+          </div>         
         </div>    
       </HashRouter>
     );

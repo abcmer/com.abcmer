@@ -4,8 +4,9 @@ class Education extends Component {
 
   render() {
     return (
+
       <div className="eduction-content">
-        <h1>Education</h1>
+        <h3>Under development</h3>     
       </div>
     );
   }
