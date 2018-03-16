@@ -74,7 +74,7 @@ ul.nav-bar a li{
 }
 
 ul.nav-bar a.active li {
-  color: #4A86E8
+  color: #007BFF
 }
 
 ul.nav-bar a li:hover {
@@ -82,7 +82,7 @@ ul.nav-bar a li:hover {
 }
 
 ul.nav-bar a.active li:hover {
-  color: #4A86E8
+  color: #007BFF
 }
 
 .app-body {
@@ -93,7 +93,6 @@ ul.nav-bar a.active li:hover {
 .content {
   background-color: #white;
   margin-left: 185px;
-  padding: 5px;
   display: inline-block;
   max-width: calc(800px - (30px * 2));
   margin-right: auto;
@@ -101,13 +100,5 @@ ul.nav-bar a.active li:hover {
   padding-left: 30px;
   padding-right: 30px;
   display: block;
-  padding-top: 60px;
 }
-/*.content h2 {
-  padding: 0;
-  margin: 0;
-}
-.content li {
-  margin-bottom: 10px;
-}*/
 

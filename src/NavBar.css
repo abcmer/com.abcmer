@@ -1,0 +1,53 @@
+.nav-container {
+	background-color: black;
+/*	opacity: .75;*/
+}
+.wrapper {
+	max-width: calc(800px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+a h1 {
+  color: white;
+  text-decoration: none;
+	font-size: 1.5rem;
+	margin-bottom: 0;
+}
+
+a.active h1 {
+  color: #007BFF
+}
+
+a.active:hover h1 {
+  color: #007BFF
+}
+
+a h1:hover {
+  color: #A9A9A9;
+  text-decoration: none;
+}
+
+
+li.nav-item a {
+  color: white;
+  text-decoration: none;
+  margin-right: 12px;
+  display: inline-block;
+  text-align: left;
+  list-style-type: none;
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+li.nav-item a.active {
+  color: #007BFF
+}
+
+li.nav-item a.active:hover {
+  color: #007BFF
+}
+
+li.nav-item a:hover {
+  color: #A9A9A9
+}
