@@ -1,0 +1,35 @@
+
+.skill h2 {
+	font-size: 1.4rem;
+	margin-top: 2rem;
+	margin-left: .6rem;
+	margin-right: .6rem;
+}
+
+.skill {
+	display: inline-block;
+	margin: 10px; 
+	border: 5px solid #0B233F;
+	border-radius: 15px;
+	padding: 5px;
+}
+
+.flex-container {
+	display: flex;
+}
+
+img.skill-icon {
+	width: 100px;
+	height: 100px;
+	align-content: center;
+}
+
+img.pro-skill {
+	width: 16px;
+	height: 16px;
+}
+
+img.love-skill {
+	width: 16px;
+	height: 16px;
+}

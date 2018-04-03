@@ -1,5 +1,5 @@
 .nav-container {
-	background-color: black;
+	background-color: #0B233F;
 /*	opacity: .75;*/
 }
 .wrapper {
@@ -17,11 +17,11 @@ a h1 {
 }
 
 a.active h1 {
-  color: #007BFF
+  color: #236192
 }
 
 a.active:hover h1 {
-  color: #007BFF
+  color: #236192
 }
 
 a h1:hover {
@@ -41,11 +41,11 @@ li.nav-item a {
 }
 
 li.nav-item a.active {
-  color: #007BFF
+  color: #78BD20
 }
 
 li.nav-item a.active:hover {
-  color: #007BFF
+  color: #78BD20
 }
 
 li.nav-item a:hover {
