@@ -65,6 +65,26 @@ class PhotoCanvas extends Component {
       "src": "https://scontent-atl3-1.cdninstagram.com/vp/4883821b7970387de20664436305a033/5B3E0ACC/t51.2885-15/e35/14278982_335587990117562_1577613786_n.jpg",
       "alt": ""
     }
+  ],
+  [
+    {
+      "src": "https://scontent-iad3-1.cdninstagram.com/vp/cfeba4cffcb30769312698b3758a96c1/5B5945F3/t51.2885-15/e35/14099462_1795121710705473_1290462259_n.jpg",
+      "alt": "",
+    },
+    {
+      "src": "https://scontent-iad3-1.cdninstagram.com/vp/b240c54b9b5f67274a22cf22a2084f3a/5B6C57CF/t51.2885-15/e35/14099891_269934890059660_1089700383_n.jpg",
+      "alt": ""
+    }
+  ],
+  [
+  {
+    "src": "https://scontent-iad3-1.cdninstagram.com/vp/d42cab88320ae04800e9a5298fa34b6c/5B564E0A/t51.2885-15/e35/13702993_968202109959445_1913125753_n.jpg",
+    "alt": ""
+  },
+  {
+    "src": "https://scontent-iad3-1.cdninstagram.com/vp/d9b7014757c9f136dc022b4879e48d0c/5B6A1A16/t51.2885-15/e35/924724_368705063339321_2012108850_n.jpg",
+    "alt": ""
+  }
   ]
 ]
     return (
