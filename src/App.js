@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Home";
-import TechnicalSkills from "./TechnicalSkills";
+import TechnicalTools from "./TechnicalTools";
 import Experience from "./Experience";
 import Education from "./Education";
 
@@ -20,7 +20,7 @@ class App extends Component {
           <NavBar />              
           <div className="content">
             <Route exact path="/" component={Home}/>
-            <Route path="/technicalskills" component={TechnicalSkills}/>
+            <Route path="/technicalskills" component={TechnicalTools}/>
             <Route path="/experience" component={Experience}/>
             <Route path="/education" component={Education}/>                          
           </div>         

@@ -1,62 +1,56 @@
-
 import React from 'react';
-import { TabContent, TabPane, Nav, NavItem, NavLink} from 'reactstrap';
-import classnames from 'classnames';
-import Skill from './Skill'
 
 import CardStack from './Cardstack';
 import Card from './Card';
 
+import './TechnicalTools.css'
 
-
-import './TechnicalSkills.css'
-
-const skills = [{
+const toolCategories = [{
   name: 'Programming Languages',
   background: 'white',
   imgSrc: 'https://d30y9cdsu7xlg0.cloudfront.net/png/143968-200.png',
   imgBorderColor: '#015389',  
   yearsExperience: '3',
-  skillDescription: 'Add Description........ ........... .......... ......... ............ ......... .......... ...'
+  tools: 'Python, SQL, JavaScript, HTML, CSS ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. '
 }, {
   name: 'Frontend',
   background: 'white',
   imgSrc: 'https://cdn0.iconfinder.com/data/icons/scrum-team-symbols/220/frontend_developer-512.png',
   imgBorderColor: '#086C32',  
   yearsExperience: '5',
-  skillDescription: "Add Description........ ........... .......... ......... ............ ......... .......... ..."
+  tools: "ReactJS, Bootstrap, Flask, Jinja2 ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
 }, {
   name: 'Backend',
   background: 'white',
   imgSrc: 'https://cdn2.iconfinder.com/data/icons/computer-and-hardware-i-line-black/2048/Cloud_Computing-512.png',
   imgBorderColor: '#6A067A',  
   yearsExperience: '1',
-  skillDescription: "Add Description........ ........... .......... ......... ............ ......... .......... ..."
+  tools: "Flask-RESTful, NodeJS, Docker, Gunicorn, Nginx, uWSGI ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
 }, {
   name: 'Data',
   background: 'white',
   imgSrc: 'https://cdn3.iconfinder.com/data/icons/programming/100/database_4-512.png',
   imgBorderColor: '#9D4F09',  
   yearsExperience: '1',
-  skillDescription: "Add Description........ ........... .......... ......... ............ ......... .......... ..."
+  tools: "MySQL, MongoDB, MS SQL Server, Pandas, Numpy, SQLAlchemy ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
 }, {
   name: 'Data Visualization',
   background: 'white',
   imgSrc: 'https://cdn4.iconfinder.com/data/icons/presentations/100/presentation-icons-04-512.png',
   imgBorderColor: '#9D4F09',  
   yearsExperience: '1',
-  skillDescription: "Add Description........ ........... .......... ......... ............ ......... .......... ..."
+  tools: "Tableau, Qlik, D3 ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
 }, {
   name: 'Additional',
   background: 'white',
   imgSrc: 'https://cdn3.iconfinder.com/data/icons/common-4/24/ui-01-512.png',
   imgBorderColor: '#9D4F09',  
   yearsExperience: '1',
-  skillDescription: "Add Description........ ........... .......... ......... ............ ......... .......... ..."
+  tools: "Git, REST, MS Team Foundation Server, Adobe Photoshop, Final Cut Studio, iMovie ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
 }];
 
 
-const SkillIcon = ({ imgSrc, borderColor }) => (
+const ToolIcon = ({ imgSrc, borderColor }) => (
   <img
     style={{
       width: '60px',
@@ -89,7 +83,7 @@ const DetailsRow = ({ icon, title, summary }) => {
   );
 };
 
-const SkillCard = (props) => (
+const ToolCard = (props) => (
   <div 
     style={{
       position: 'absolute',
@@ -98,7 +92,7 @@ const SkillCard = (props) => (
     }}
     onClick={props.onClick}>
     <header style={styles.cardHeader} className='card-header-details'>
-      <SkillIcon imgSrc={props.imgSrc} borderColor={props.imgBorderColor} />
+      <ToolIcon imgSrc={props.imgSrc} borderColor={props.imgBorderColor} />
       <div>
         <h1 style={styles.headerName}>{props.name}</h1>
         <h3 style={styles.headerTitle} className='icon ion-ios-arrow-down'>{props.title}</h3>
@@ -114,7 +108,7 @@ const SkillCard = (props) => (
       <DetailsRow
         icon='icon ion-ios-paper-outline'
         title='Main Role'
-        summary={props.skillDescription}
+        summary={props.tools}
       />
     </div>
   </div>
@@ -168,7 +162,7 @@ const styles = {
 };
 
 
-export default class TechnicalSkills extends React.Component {
+export default class TechnicalTools extends React.Component {
   constructor(props) {
     super(props);
 
@@ -195,11 +189,11 @@ export default class TechnicalSkills extends React.Component {
           background="#f8f8f8"
           hoverOffset={25}>
 
-          {skills.map((person, i) =>
+          {toolCategories.map((category, i) =>
             <Card
               key={i}
-              background={person.background}>
-              <SkillCard {...person} />
+              background={category.background}>
+              <ToolCard {...category} />
             </Card>
           )}
 
