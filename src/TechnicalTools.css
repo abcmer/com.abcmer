@@ -6,5 +6,9 @@
 
 .technical-skills ul li {
 	font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial,sans-serif";
+}
 
+.tool-icon {
+    height: 60px;
+    width: 60px;
 }

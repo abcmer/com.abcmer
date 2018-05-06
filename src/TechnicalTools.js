@@ -1,9 +1,128 @@
 import React from 'react';
 
-import CardStack from './Cardstack';
-import Card from './Card';
+import CardStack from './CardStack'
+import Card from './Card'
 
 import './TechnicalTools.css'
+
+const tools = [{
+  'name': 'Python',
+  'imgSrc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png',
+  'toolCategory': 'language',
+}, {
+  'name': 'SQL',
+  'imgSrc': 'https://cdn2.iconfinder.com/data/icons/line-design-database-set-4/21/sql-512.png',
+  'toolCategory': 'language',
+}, {
+  'name': 'JavaScript',
+  'imgSrc': 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
+  'toolCategory': 'language',
+}, {
+  'name': 'HTML',
+  'imgSrc': 'http://thewebrocks.com/demos/html5-3d-css/html5.png',
+  'toolCategory': 'language'
+}, {
+  'name': 'CSS',
+  'imgSrc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/2000px-CSS3_logo_and_wordmark.svg.png',
+  'toolCategory': 'language'
+}, {
+  'name': 'ReactJS',
+  'imgSrc': 'https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1198519/reactjs.png',
+  'toolCategory': 'frontend'
+}, {
+  'name': 'Bootstrap',
+  'imgSrc': 'https://getbootstrap.com/docs/4.1/assets/img/bootstrap-stack.png',
+  'toolCategory': 'frontend'
+}, {
+  'name': 'Flask',
+  'imgSrc': 'http://flask.pocoo.org/docs/0.12/_static/flask.png',
+  'toolCategory': 'frontend'
+}, {
+  'name': 'Jina2',
+  'imgSrc': 'http://jinja.pocoo.org/docs/2.10/_static/jinja-small.png',
+  'toolCategory': 'frontend'
+}, {
+  'name': 'Flask-Restful',
+  'imgSrc': 'http://flask-restful.readthedocs.io/en/latest/_static/flask-restful-small.png',
+  'toolCategory': 'backend'
+}, {
+  'name': 'NodeJS',
+  'imgSrc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png',
+  'toolCategory': 'backend'
+}, {
+  'name': 'Docker',
+  'imgSrc': 'https://ih1.redbubble.net/image.386900865.0087/flat,800x800,075,f.jpg',
+  'toolCategory': 'backend'
+}, {
+  'name': 'Gunicorn',
+  'imgSrc': 'http://www.stickpng.com/assets/images/584807f6cef1014c0b5e48e0.png',
+  'toolCategory': 'backend'
+}, {
+  'name': 'Nginx',
+  'imgSrc': 'https://cdn-1.wp.nginx.com/wp-content/uploads/2015/04/NGINX_logo_rgb-01.png',
+  'toolCategory': 'backend'
+}, {
+  'name': 'uWSGI',
+  'imgSrc': 'https://www.20tab.com/media/article/image-top/u.png',
+  'toolCategory': 'backend'
+}, {
+  'name': 'MySQL',
+  'imgSrc': 'https://seeklogo.com/images/M/MySQL-logo-F6FF285A58-seeklogo.com.png',
+  'toolCategory': 'data'
+}, {
+  'name': 'MongoDB',
+  'imgSrc': 'https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg',
+  'toolCategory': 'data'
+}, {
+  'name': 'MS SQL Server',
+  'imgSrc': 'https://clipart.info/images/ccovers/1499955337microsoft-sql-server-logo-png.png',
+  'toolCategory': 'data'
+}, {
+  'name': 'Pandas',
+  'imgSrc': 'https://geo-python.github.io/2017/_images/pandas_logo.png',
+  'toolCategory': 'data'
+}, {
+  'name': 'Numpy',
+  'imgSrc': 'https://1.bp.blogspot.com/-CHMzy5L0Qcw/Wpy00BAw-dI/AAAAAAAAG9g/fBinxajEzcshsZPSemZIt37JlqOWdDWbQCLcBGAs/s1600/numpy.jpeg',
+  'toolCategory': 'data'
+}, {
+  'name': 'SQLAlchemy',
+  'imgSrc': 'https://www.fullstackpython.com/img/logos/sqlalchemy.jpg',
+  'toolCategory': 'data'
+}, {
+  'name': 'Tableau',
+  'imgSrc': 'http://www.lib.washington.edu/dataservices/images/Tableau_Software_logo.png/image',
+  'toolCategory': 'dataViz'
+}, {
+  'name': 'Qlik',
+  'imgSrc': 'https://www.scopesystems.com.au/assets/qlikview-1.png',
+  'toolCategory': 'dataViz'
+}, {
+  'name': 'D3',
+  'imgSrc': 'https://ih0.redbubble.net/image.482086039.3183/flat,800x800,070,f.jpg',
+  'toolCategory': 'dataViz'
+}, {
+  'name': 'Zoomdata',
+  'imgSrc': 'https://www.zoomdata.com/sites/all/themes/zoomadu/logo.png',
+  'toolCategory': 'dataViz'
+}, {
+  'name': 'Git',
+  'imgSrc': 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png',
+  'toolCategory': 'additional'
+}, {
+  'name': 'MS TFS/VSTS',
+  'imgSrc': 'https://msdnshared.blob.core.windows.net/media/2016/10/favicon.png',
+  'toolCategory': 'additional'
+}, {
+  'name': 'Adobe Photoshop',
+  'imgSrc': 'https://seeklogo.com/images/A/adobe-photoshop-cs4-logo-A731187DA9-seeklogo.com.jpg',
+  'toolCategory': 'additional'
+}, {
+  'name': 'iMovie',
+  'imgSrc': 'https://vignette.wikia.nocookie.net/logopedia/images/6/6a/IMovie4.png/revision/latest?cb=20150622190412',
+  'toolCategory': 'additional'
+}]
+
 
 const toolCategories = [{
   name: 'Programming Languages',
@@ -11,43 +130,50 @@ const toolCategories = [{
   imgSrc: 'https://d30y9cdsu7xlg0.cloudfront.net/png/143968-200.png',
   imgBorderColor: '#015389',  
   yearsExperience: '3',
-  tools: 'Python, SQL, JavaScript, HTML, CSS ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. '
+  tools: tools.filter(tool => tool.toolCategory === 'language'),
+
+    // 'Python, SQL, JavaScript, HTML, CSS ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. '
 }, {
   name: 'Frontend',
   background: 'white',
   imgSrc: 'https://cdn0.iconfinder.com/data/icons/scrum-team-symbols/220/frontend_developer-512.png',
-  imgBorderColor: '#086C32',  
+  imgBorderColor: '#086C32',
   yearsExperience: '5',
-  tools: "ReactJS, Bootstrap, Flask, Jinja2 ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
+  tools: tools.filter(tool => tool.toolCategory === 'frontend')
 }, {
   name: 'Backend',
   background: 'white',
   imgSrc: 'https://cdn2.iconfinder.com/data/icons/computer-and-hardware-i-line-black/2048/Cloud_Computing-512.png',
-  imgBorderColor: '#6A067A',  
+  imgBorderColor: '#6A067A',
   yearsExperience: '1',
-  tools: "Flask-RESTful, NodeJS, Docker, Gunicorn, Nginx, uWSGI ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
+  tools: tools.filter(tool => tool.toolCategory === 'backend')
+  // tools: "Flask-RESTful, NodeJS, Docker, Gunicorn, Nginx, uWSGI ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
 }, {
   name: 'Data',
   background: 'white',
   imgSrc: 'https://cdn3.iconfinder.com/data/icons/programming/100/database_4-512.png',
-  imgBorderColor: '#9D4F09',  
+  imgBorderColor: '#9D4F09',
   yearsExperience: '1',
-  tools: "MySQL, MongoDB, MS SQL Server, Pandas, Numpy, SQLAlchemy ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
+  tools: tools.filter(tool => tool.toolCategory === 'data')
+  // tools: "MySQL, MongoDB, MS SQL Server, Pandas, Numpy, SQLAlchemy ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
 }, {
   name: 'Data Visualization',
   background: 'white',
   imgSrc: 'https://cdn4.iconfinder.com/data/icons/presentations/100/presentation-icons-04-512.png',
-  imgBorderColor: '#9D4F09',  
+  imgBorderColor: '#9D4F09',
   yearsExperience: '1',
-  tools: "Tableau, Qlik, D3 ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
+  tools: tools.filter(tool => tool.toolCategory === 'dataViz')
+  // tools: "Tableau, Qlik, D3 ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
 }, {
   name: 'Additional',
   background: 'white',
   imgSrc: 'https://cdn3.iconfinder.com/data/icons/common-4/24/ui-01-512.png',
-  imgBorderColor: '#9D4F09',  
+  imgBorderColor: '#9D4F09',
   yearsExperience: '1',
-  tools: "Git, REST, MS Team Foundation Server, Adobe Photoshop, Final Cut Studio, iMovie ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
-}];
+  tools: tools.filter(tool => tool.toolCategory === 'additional')
+  // tools: "Git, REST, MS Team Foundation Server, Adobe Photoshop, Final Cut Studio, iMovie ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
+}
+];
 
 
 const ToolIcon = ({ imgSrc, borderColor }) => (
@@ -100,16 +226,9 @@ const ToolCard = (props) => (
     </header>
 
     <div style={{color: '#0B233F'}}>
-      <DetailsRow
-        icon='ion-ios-telephone-outline'
-        title={props.yearsExperience}
-      />
-
-      <DetailsRow
-        icon='icon ion-ios-paper-outline'
-        title='Main Role'
-        summary={props.tools}
-      />
+      {props.tools.map((tool) => (
+        <img className="tool-icon"  src={tool.imgSrc}/>
+      ))}
     </div>
   </div>
 );
@@ -158,6 +277,10 @@ const styles = {
       margin: 0,
       fontFamily: "SF Pro Text,Myriad Set Pro,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif"
     },
+    toolLogo: {
+      width: '60px',
+      height: '60px'
+    }
   },
 };
 
@@ -185,7 +308,7 @@ export default class TechnicalTools extends React.Component {
       <div>
         <CardStack
           height={500}
-          width={'65%'}
+          width={'100%'}
           background="#f8f8f8"
           hoverOffset={25}>
 
