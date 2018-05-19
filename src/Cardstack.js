@@ -68,11 +68,19 @@ class CardStack extends React.Component {
 	}
 
 	render () {
+		const borderBottom = () => {
+			if (this.state.cardSelected == false) {
+				return '5px solid #0B233F'
+			} else {
+				return '5px solid white'
+			}
+		}
 		const stackStyles = {
 			...styles,
 			background: this.props.background,
 			height: this.props.height,
 			width: this.props.width,
+			borderBottom: borderBottom(),
 		};
 		return (
 			<ul style={stackStyles}>

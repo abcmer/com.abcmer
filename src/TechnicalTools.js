@@ -2,6 +2,7 @@ import React from 'react';
 
 import CardStack from './CardStack'
 import Card from './Card'
+import Tooltip from 'reactstrap'
 
 import './TechnicalTools.css'
 
@@ -209,12 +210,14 @@ const DetailsRow = ({ icon, title, summary }) => {
   );
 };
 
+
 const ToolCard = (props) => (
   <div 
     style={{
       position: 'absolute',
       top: 0,
-      border: '5px solid #0B233F'
+      border: '5px solid #0B233F',
+      width: '100%'
     }}
     onClick={props.onClick}>
     <header style={styles.cardHeader} className='card-header-details'>
@@ -227,7 +230,10 @@ const ToolCard = (props) => (
 
     <div style={{color: '#0B233F'}}>
       {props.tools.map((tool) => (
-        <img className="tool-icon"  src={tool.imgSrc}/>
+        <div className="tooltips">
+          <img className="tool-icon"  src={tool.imgSrc}/>
+          <span className="tooltipstext">{tool.name}</span>
+        </div>
       ))}
     </div>
   </div>
@@ -311,6 +317,7 @@ export default class TechnicalTools extends React.Component {
           width={'100%'}
           background="#f8f8f8"
           hoverOffset={25}>
+
 
           {toolCategories.map((category, i) =>
             <Card
