@@ -11,18 +11,17 @@ import Education from "./Education";
 
 import './App.css';
 
-
 class App extends Component {
   render() {
     return (     
       <HashRouter>
         <div>          
-          <NavBar />              
+          <NavBar />
           <div className="content">
-            <Route exact path="/" component={Home}/>
-            <Route path="/technicalskills" component={TechnicalTools}/>
-            <Route path="/experience" component={Experience}/>
-            <Route path="/education" component={Education}/>                          
+            <Home/>
+            <TechnicalTools/>
+            <Experience/>
+            <Education/>
           </div>         
         </div>    
       </HashRouter>

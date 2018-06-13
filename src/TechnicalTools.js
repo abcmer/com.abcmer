@@ -212,7 +212,8 @@ const DetailsRow = ({ icon, title, summary }) => {
 
 
 const ToolCard = (props) => (
-  <div 
+  <div
+    id='technicalskills'
     style={{
       position: 'absolute',
       top: 0,

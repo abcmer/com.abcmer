@@ -7,9 +7,10 @@ import {
   NavItem
 } from 'reactstrap';
 
-import {
-  NavLink
-} from "react-router-dom";
+// import {
+//   NavLink
+// } from "react-router-dom";
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 import './NavBar.css'
 
@@ -33,21 +34,21 @@ export default class NavBar extends React.Component {
       color: 'white'
     }
     return (
-      <div className="nav-container">
+      <div className="nav-container sticky">
         <div className="wrapper">
           <Navbar color="black" light expand="md">
-            <NavLink exact to="/"><h1>Adam Siemer</h1></NavLink>
+            <NavLink exact to="/#home"><h1>Adam Siemer</h1></NavLink>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem style={navItemStyle}>
-                  <NavLink to="/technicalskills">Technical Skills</NavLink>
+                  <NavLink to="/#technicalskills">Technical Skills</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="/experience">Experience</NavLink>
+                  <NavLink to="/#experience">Experience</NavLink>
                 </NavItem>   
                 <NavItem>
-                  <NavLink to="/education">Education</NavLink>
+                  <NavLink to="/#education">Education</NavLink>
                 </NavItem>                                                           
               </Nav>
             </Collapse>

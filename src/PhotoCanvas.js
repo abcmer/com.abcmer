@@ -88,7 +88,7 @@ class PhotoCanvas extends Component {
   ]
 ]
     return (
-      <div className='photo-canvas'>
+      <div id='home' className='photo-canvas'>
         {photos.map(items =>
           <PhotoSlide photos={items}/>
           )

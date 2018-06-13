@@ -94,11 +94,22 @@ ul.nav-bar a.active li:hover {
   background-color: #white;
   margin-left: 185px;
   display: inline-block;
-  max-width: calc(800px - (30px * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  max-width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0px;
+  padding-right: 0px;
   display: block;
+  padding-top: 44px;
 }
+
+.content-block-full {
+  max-width: 100%;
+}
+
+.content-block-normal {
+  max-width: 80%;
+  margin: 20%;
+}
+
 

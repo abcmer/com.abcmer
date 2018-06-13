@@ -1,7 +1,15 @@
 .nav-container {
 	background-color: #0B233F;
+  z-index: 1;
 /*	opacity: .75;*/
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
 .wrapper {
 	max-width: calc(800px - (30px * 2));
   margin-right: auto;
@@ -23,6 +31,7 @@ a.active h1 {
 a.active:hover h1 {
   color: #236192
 }
+
 
 a h1:hover {
   color: #A9A9A9;
