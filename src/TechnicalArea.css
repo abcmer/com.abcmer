@@ -1,6 +1,7 @@
 .card {
     margin: 5px;
     border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card .card-img {
     height: 80px;
@@ -12,13 +13,20 @@
     border-radius: 25px;
 }
 
-.card-footer{
-    height: 30px;
-    border-radius: 25px;
-}
 .card-header h1 {
     margin: 2px;
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     font-size: 1.3rem;
     margin-top: 1.3rem;
+}
+
+.card-body {
+    border-top:  3px solid #78BE20;
+    border-bottom:  3px solid #78BE20;
+    background-color: #0B233F;
+}
+
+.card-footer{
+    height: 30px;
+    border-radius: 25px;
 }

@@ -13,9 +13,6 @@ const TechnicalArea = (props) => {
   const categoryName = props.category.name;
   const skills = props.category.skills;
 
-  const cardBodyStyle = {
-    backgroundColor: '#0B233F'
-  }
   const imgStyle = {
     height: '50px',
     width: '50px'
@@ -26,7 +23,7 @@ const TechnicalArea = (props) => {
           <CardImg width="100%" src={categoryImgSrc} alt="Card image cap" />
           <h1>{categoryName}</h1>
         </div>
-        <CardBody style={cardBodyStyle}>
+        <CardBody>
           <Row>
             {skills.map(skill => {
               return(
