@@ -4,10 +4,11 @@ import {
   HashRouter
 } from "react-router-dom";
 import NavBar from "./NavBar";
-import Home from "./Home";
+import Photography from "./Photography";
 import TechnicalTools from "./TechnicalTools";
 import Experience from "./Experience";
 import Education from "./Education";
+import Technical from "./Technical";
 
 import './App.css';
 
@@ -18,10 +19,10 @@ class App extends Component {
         <div>          
           <NavBar />
           <div className="content">
-            <Home/>
-            <TechnicalTools/>
-            <Experience/>
-            <Education/>
+            <Photography/>
+            <Technical/>
+            {/*<Experience/>*/}
+            {/*<Education/>*/}
           </div>         
         </div>    
       </HashRouter>

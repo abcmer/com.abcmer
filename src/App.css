@@ -109,7 +109,8 @@ ul.nav-bar a.active li:hover {
 
 .content-block-normal {
   max-width: 80%;
-  margin: 20%;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 
 

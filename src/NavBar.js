@@ -7,16 +7,13 @@ import {
   NavItem
 } from 'reactstrap';
 
-// import {
-//   NavLink
-// } from "react-router-dom";
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 import './NavBar.css'
 
-const scrollFn = element => {
+const scrollFn = (element, offset) => {
   element.scrollIntoView({ block: 'start' });
-  window.scrollBy(0, -44);
+  window.scrollBy(0, offset);
 }
 
 export default class NavBar extends React.Component {
@@ -46,28 +43,28 @@ export default class NavBar extends React.Component {
               <Nav className="ml-sm-0 " navbar>
                 <NavItem>
                   <NavLink
-                    to="/#abcmer"
-                    scroll={el => scrollFn(el)}
+                    to="/#photography"
+                    scroll={el => scrollFn(el, -44)}
                   >Adam Siemer</NavLink>
                 </NavItem>
                 <NavItem style={navItemStyle}>
                   <NavLink
-                    to="/#technicalskills"
-                    scroll={el => scrollFn(el)}
-                  >Technical</NavLink>
+                    to="/#technical"
+                    scroll={el => scrollFn(el, (0))}
+                  >Skillsets</NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink
-                    to="/#experience"
-                    scroll={el => scrollFn(el)}
-                  >Experience</NavLink>
-                </NavItem>   
-                <NavItem>
-                  <NavLink
-                    to="/#education"
-                    scroll={el => scrollFn(el)}
-                  >Education</NavLink>
-                </NavItem>                                                           
+                {/*<NavItem>*/}
+                  {/*<NavLink*/}
+                    {/*to="/#experience"*/}
+                    {/*scroll={el => scrollFn(el, -44)}*/}
+                  {/*>Experience</NavLink>*/}
+                {/*</NavItem>   */}
+                {/*<NavItem>*/}
+                  {/*<NavLink*/}
+                    {/*to="/#education"*/}
+                    {/*scroll={el => scrollFn(el, -44)}*/}
+                  {/*>Education</NavLink>*/}
+                {/*</NavItem>                                                           */}
               </Nav>
             </Collapse>
           </Navbar>
