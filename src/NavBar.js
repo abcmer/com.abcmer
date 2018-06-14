@@ -35,25 +35,37 @@ export default class NavBar extends React.Component {
     }
     return (
       <div className="nav-container sticky">
-        <div className="wrapper">
           <Navbar color="black" light expand="md">
-            <NavLink exact to="/#home"><h1>Adam Siemer</h1></NavLink>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
+              <Nav className="ml-sm-0 " navbar>
+                <NavItem>
+                  <NavLink
+                    to="/#abcmer"
+                    scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                  >Adam Siemer</NavLink>
+                </NavItem>
                 <NavItem style={navItemStyle}>
-                  <NavLink to="/#technicalskills">Technical Skills</NavLink>
+                  <NavLink
+                    to="/#technicalskills"
+                    scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                  >Technical</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="/#experience">Experience</NavLink>
+                  <NavLink
+                    to="/#experience"
+                    scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                  >Experience</NavLink>
                 </NavItem>   
                 <NavItem>
-                  <NavLink to="/#education">Education</NavLink>
+                  <NavLink
+                    to="/#education"
+                    scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                  >Education</NavLink>
                 </NavItem>                                                           
               </Nav>
             </Collapse>
           </Navbar>
-        </div>
       </div>
     );
   }

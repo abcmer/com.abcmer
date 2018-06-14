@@ -214,6 +214,7 @@ const DetailsRow = ({ icon, title, summary }) => {
 const ToolCard = (props) => (
   <div
     id='technicalskills'
+    // className='content-block-normal'
     style={{
       position: 'absolute',
       top: 0,
