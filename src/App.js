@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 import NavBar from "./NavBar";
 import Photography from "./Photography";
-import TechnicalTools from "./TechnicalTools";
 import Experience from "./Experience";
 import Education from "./Education";
 import Technical from "./Technical";

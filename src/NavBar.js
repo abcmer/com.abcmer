@@ -51,7 +51,7 @@ export default class NavBar extends React.Component {
                   <NavLink
                     to="/#technical"
                     scroll={el => scrollFn(el, (0))}
-                  >Skillsets</NavLink>
+                  >Expertise</NavLink>
                 </NavItem>
                 {/*<NavItem>*/}
                   {/*<NavLink*/}
