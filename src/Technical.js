@@ -9,10 +9,6 @@ const skills = [{
   'imgSrc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png',
   'skillCategory': 'language',
 }, {
-  'name': 'SQL',
-  'imgSrc': 'https://cdn2.iconfinder.com/data/icons/line-design-database-set-4/21/sql-512.png',
-  'skillCategory': 'language',
-}, {
   'name': 'JavaScript',
   'imgSrc': 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
   'skillCategory': 'language',
@@ -27,43 +23,35 @@ const skills = [{
 }, {
   'name': 'ReactJS',
   'imgSrc': 'https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1198519/reactjs.png',
-  'skillCategory': 'frontend'
+  'skillCategory': 'web-development'
 }, {
   'name': 'Bootstrap',
   'imgSrc': 'https://getbootstrap.com/docs/4.1/assets/img/bootstrap-stack.png',
-  'skillCategory': 'frontend'
+  'skillCategory': 'web-development'
 }, {
   'name': 'Flask',
   'imgSrc': 'http://flask.pocoo.org/docs/0.12/_static/flask.png',
-  'skillCategory': 'frontend'
-}, {
-  'name': 'Jina2',
-  'imgSrc': 'http://jinja.pocoo.org/docs/2.10/_static/jinja-small.png',
-  'skillCategory': 'frontend'
-}, {
-  'name': 'Flask-Restful',
-  'imgSrc': 'http://flask-restful.readthedocs.io/en/latest/_static/flask-restful-small.png',
-  'skillCategory': 'backend'
+  'skillCategory': 'web-development'
 }, {
   'name': 'NodeJS',
   'imgSrc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png',
-  'skillCategory': 'backend'
+  'skillCategory': 'web-development'
 }, {
   'name': 'Docker',
   'imgSrc': 'https://ih1.redbubble.net/image.386900865.0087/flat,800x800,075,f.jpg',
-  'skillCategory': 'backend'
+  'skillCategory': 'web-development'
 }, {
   'name': 'Gunicorn',
   'imgSrc': 'http://www.stickpng.com/assets/images/584807f6cef1014c0b5e48e0.png',
-  'skillCategory': 'backend'
+  'skillCategory': 'web-development'
 }, {
   'name': 'Nginx',
   'imgSrc': 'https://cdn-1.wp.nginx.com/wp-content/uploads/2015/04/NGINX_logo_rgb-01.png',
-  'skillCategory': 'backend'
+  'skillCategory': 'web-development'
 }, {
   'name': 'uWSGI',
   'imgSrc': 'https://www.20tab.com/media/article/image-top/u.png',
-  'skillCategory': 'backend'
+  'skillCategory': 'web-development'
 }, {
   'name': 'MySQL',
   'imgSrc': 'https://seeklogo.com/images/M/MySQL-logo-F6FF285A58-seeklogo.com.png',
@@ -107,19 +95,19 @@ const skills = [{
 }, {
   'name': 'Git',
   'imgSrc': 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png',
-  'skillCategory': 'additional'
+  'skillCategory': 'utility'
 }, {
   'name': 'MS TFS/VSTS',
   'imgSrc': 'https://msdnshared.blob.core.windows.net/media/2016/10/favicon.png',
-  'skillCategory': 'additional'
+  'skillCategory': 'utility'
 }, {
   'name': 'Adobe Photoshop',
   'imgSrc': 'https://seeklogo.com/images/A/adobe-photoshop-cs4-logo-A731187DA9-seeklogo.com.jpg',
-  'skillCategory': 'additional'
+  'skillCategory': 'utility'
 }, {
   'name': 'iMovie',
   'imgSrc': 'https://vignette.wikia.nocookie.net/logopedia/images/6/6a/IMovie4.png/revision/latest?cb=20150622190412',
-  'skillCategory': 'additional'
+  'skillCategory': 'utility'
 }]
 
 const skillCategories = [{
@@ -130,22 +118,14 @@ const skillCategories = [{
   yearsExperience: '3',
   skills: skills.filter(skill => skill.skillCategory === 'language'),
 }, {
-  name: 'Frontend',
+  name: 'Web Development',
   background: 'white',
   imgSrc: 'https://cdn0.iconfinder.com/data/icons/scrum-team-symbols/220/frontend_developer-512.png',
   imgBorderColor: '#086C32',
   yearsExperience: '5',
-  skills: skills.filter(skill => skill.skillCategory === 'frontend')
+  skills: skills.filter(skill => skill.skillCategory === 'web-development')
 }, {
-  name: 'Backend',
-  background: 'white',
-  imgSrc: 'https://cdn2.iconfinder.com/data/icons/computer-and-hardware-i-line-black/2048/Cloud_Computing-512.png',
-  imgBorderColor: '#6A067A',
-  yearsExperience: '1',
-  skills: skills.filter(skill => skill.skillCategory === 'backend')
-  // skills: "Flask-RESTful, NodeJS, Docker, Gunicorn, Nginx, uWSGI ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
-}, {
-  name: 'Data',
+  name: 'Database',
   background: 'white',
   imgSrc: 'https://cdn3.iconfinder.com/data/icons/programming/100/database_4-512.png',
   imgBorderColor: '#9D4F09',
@@ -161,12 +141,12 @@ const skillCategories = [{
   skills: skills.filter(skill => skill.skillCategory === 'dataViz')
   // skills: "Tableau, Qlik, D3 ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
 }, {
-  name: 'Additional',
+  name: 'Utility',
   background: 'white',
   imgSrc: 'https://cdn3.iconfinder.com/data/icons/common-4/24/ui-01-512.png',
   imgBorderColor: '#9D4F09',
   yearsExperience: '1',
-  skills: skills.filter(skill => skill.skillCategory === 'additional')
+  skills: skills.filter(skill => skill.skillCategory === 'utility')
   // skills: "Git, REST, MS Team Foundation Server, Adobe Photoshop, Final Cut Studio, iMovie ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
 }
 ];

@@ -4,6 +4,7 @@
     <list default="true" id="17e13eed-2ec6-4640-9af8-970471bb9dd8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PhotoCanvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhotoCanvas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Technical.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Technical.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,32 +15,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Technical.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Technical.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="105" column="28" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="PhotoCanvas.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PhotoCanvas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="185" column="162" selection-start-line="185" selection-start-column="162" selection-end-line="185" selection-end-column="162" />
+            <state relative-caret-position="198">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#187#624#0" />
-                <element signature="e#632#1067#0" />
-                <element signature="e#1075#1511#0" />
-                <element signature="e#1519#1956#0" />
-                <element signature="e#1964#2392#0" />
-                <element signature="e#2400#2827#0" />
-                <element signature="e#2835#3255#0" />
-                <element signature="e#3263#3679#0" />
-                <element signature="e#3687#4103#0" />
-                <element signature="e#3828#3960#0" />
-                <element signature="e#3968#4100#0" />
-                <element signature="e#4108#4240#0" />
-                <element signature="e#4248#4380#0" />
-                <element signature="e#5438#5634#0" />
-                <element signature="e#5644#5839#0" />
-                <element signature="e#4388#4520#0" />
-                <element signature="e#4528#4660#0" />
-                <element signature="e#4668#4800#0" />
-                <element signature="e#4808#4940#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Education.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Education.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="51" column="45" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,6 +79,7 @@
       <find>img</find>
       <find>imgSrc</find>
       <find>cardBodyStyle</find>
+      <find>bachelorsDiplomaImg</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -98,10 +105,10 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/TechnicalLogo.js" />
         <option value="$PROJECT_DIR$/src/TechnicalIcon.js" />
-        <option value="$PROJECT_DIR$/src/Technical.js" />
         <option value="$PROJECT_DIR$/src/TechnicalIcon.css" />
         <option value="$PROJECT_DIR$/src/TechnicalArea.js" />
         <option value="$PROJECT_DIR$/src/TechnicalArea.css" />
+        <option value="$PROJECT_DIR$/src/Technical.js" />
         <option value="$PROJECT_DIR$/src/PhotoCanvas.js" />
       </list>
     </option>
@@ -121,10 +128,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1240" />
-    <option name="height" value="680" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -132,6 +139,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,12 +152,24 @@
               <item name="abcmerdotcom" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="abcmerdotcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abcmerdotcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="abcmerdotcom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abcmerdotcom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="instagram" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,12 +251,14 @@
       <updated>1525631650074</updated>
       <workItem from="1525631652700" duration="6611000" />
       <workItem from="1528986825998" duration="38000" />
-      <workItem from="1528995810750" duration="2545000" />
+      <workItem from="1528995810750" duration="3346000" />
+      <workItem from="1529369497730" duration="3180000" />
+      <workItem from="1529962583133" duration="3001000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29381000" />
+    <option name="totallyTimeSpent" value="36363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -277,6 +299,18 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/PhotoCanvas.js</url>
+          <line>9</line>
+          <properties lambdaOrdinal="-1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Technical.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -301,25 +335,6 @@
           <caret line="191" column="28" selection-start-line="191" selection-start-column="28" selection-end-line="191" selection-end-column="28" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#187#624#0" />
-            <element signature="e#632#1067#0" />
-            <element signature="e#1075#1511#0" />
-            <element signature="e#1519#1956#0" />
-            <element signature="e#1964#2392#0" />
-            <element signature="e#2400#2827#0" />
-            <element signature="e#2835#3255#0" />
-            <element signature="e#3263#3679#0" />
-            <element signature="e#3687#4103#0" />
-            <element signature="e#3828#3960#0" />
-            <element signature="e#3968#4100#0" />
-            <element signature="e#4108#4240#0" />
-            <element signature="e#4248#4380#0" />
-            <element signature="e#5438#5634#0" />
-            <element signature="e#5644#5839#0" />
-            <element signature="e#4388#4520#0" />
-            <element signature="e#4528#4660#0" />
-            <element signature="e#4668#4800#0" />
-            <element signature="e#4808#4940#0" />
           </folding>
         </state>
       </provider>
@@ -449,13 +464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Education.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PhotoSlide.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -488,16 +496,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TechnicalTools.js" />
-    <entry file="file://$PROJECT_DIR$/src/Technical.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TechnicalArea.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="47">
@@ -564,31 +562,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PhotoCanvas.js">
+    <entry file="file://$PROJECT_DIR$/src/Technical.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="185" column="162" selection-start-line="185" selection-start-column="162" selection-end-line="185" selection-end-column="162" />
+        <state relative-caret-position="81">
+          <caret line="105" column="28" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Education.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="51" column="45" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="45" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#187#624#0" />
-            <element signature="e#632#1067#0" />
-            <element signature="e#1075#1511#0" />
-            <element signature="e#1519#1956#0" />
-            <element signature="e#1964#2392#0" />
-            <element signature="e#2400#2827#0" />
-            <element signature="e#2835#3255#0" />
-            <element signature="e#3263#3679#0" />
-            <element signature="e#3687#4103#0" />
-            <element signature="e#3828#3960#0" />
-            <element signature="e#3968#4100#0" />
-            <element signature="e#4108#4240#0" />
-            <element signature="e#4248#4380#0" />
-            <element signature="e#5438#5634#0" />
-            <element signature="e#5644#5839#0" />
-            <element signature="e#4388#4520#0" />
-            <element signature="e#4528#4660#0" />
-            <element signature="e#4668#4800#0" />
-            <element signature="e#4808#4940#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PhotoCanvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
