@@ -1,4 +1,27 @@
 .photo-canvas {
 	display: inline-block;
 	background-color: #0B233F;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+
+.container {
+	max-width: 100%;
+	width: 100%;
+}
+
+.photo-canvas .col {
+	margin: 0;
+	padding: 0;
+}
+
+.col {
+	margin: 0;
+	padding: 0;
+}
+
+.container-full {
+	margin: 0 auto;
+	width: 100%;
 }

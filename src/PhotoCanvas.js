@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { Row, Col } from 'reactstrap';
+
 import PhotoSlide from './PhotoSlide'
 import './PhotoCanvas.css'
 
 class PhotoCanvas extends Component {
   render() {
-    const photos = [
+    const photosRow1 = [
       [        
         {
           "src": require("./static/instagram/westpalm_street_art.jpg"),
@@ -64,7 +66,9 @@ class PhotoCanvas extends Component {
           "src": require("./static/instagram/california_honeydrops.jpg"),
           "alt": "california_honeydrops"
         }
-      ],
+      ]
+    ];
+    const photosRow2 = [
       [
         {
           "src": require("./static/instagram/grand_lake_camping.jpg"),
@@ -125,7 +129,10 @@ class PhotoCanvas extends Component {
           "src": require("./static/instagram/mount_ranier.jpg"),
           "alt": "mount_ranier"
         }
-      ],
+      ]
+    ];
+
+    const photosRow3 = [
       [
         {
           "src": require("./static/instagram/low_country_aftermath.jpg"),
@@ -185,16 +192,30 @@ class PhotoCanvas extends Component {
           "src": require("./static/instagram/whiskey_joes_cool_sunset.jpg"),
           "alt": "whiskey_joes_cool_sunset"
         }
-      ],
-  ]
-    return (
-      <div id='photography' className='photo-canvas'>
-        {photos.map(items =>
-          <PhotoSlide photos={items}/>
-          )
-        }
+      ]
+    ];
 
-      </div>            
+  return (
+    <div>
+      <Row className='no-gutters'>
+        {photosRow1.map(items =>
+          <Col><PhotoSlide photos={items}/></Col>
+        )
+        }
+      </Row>
+      <Row className='no-gutters'>
+        {photosRow2.map(items =>
+          <Col><PhotoSlide photos={items}/></Col>
+        )
+        }
+      </Row>
+      <Row className='no-gutters'>
+        {photosRow3.map(items =>
+          <Col><PhotoSlide photos={items}/></Col>
+        )
+        }
+      </Row>
+    </div>
     );
   }
 }
