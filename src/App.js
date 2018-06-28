@@ -14,13 +14,32 @@ import Technical from "./Technical";
 import './App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      innerHeight: 0
+    }
+  }
+
+  updateDimensions() {
+    this.setState({
+      innerHeight: window.innerHeight
+    })
+    console.log(this.state.innerHeight);
+  }
+
+  componentDidMount() {
+    this.updateDimensions();
+    window.addEventListener("resize", this.updateDimensions.bind(this));
+  }
+
   render() {
     return (     
       <HashRouter>
         <div>          
           <NavBar />
           <Scrollbars
-            style={{ height: 732 }}>
+            style={{ height: this.state.innerHeight }}>
           <div className="content">
             <Photography/>
             <Technical/>
