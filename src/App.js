@@ -3,6 +3,8 @@ import {
   Route,
   HashRouter
 } from "react-router-dom";
+
+import { Scrollbars } from 'react-custom-scrollbars';
 import NavBar from "./NavBar";
 import Photography from "./Photography";
 import Experience from "./Experience";
@@ -17,12 +19,15 @@ class App extends Component {
       <HashRouter>
         <div>          
           <NavBar />
+          <Scrollbars
+            style={{ height: 732 }}>
           <div className="content">
             <Photography/>
             <Technical/>
             {/*<Experience/>*/}
             {/*<Education/>*/}
-          </div>         
+          </div>
+          </Scrollbars>
         </div>    
       </HashRouter>
     );
