@@ -34,7 +34,7 @@ export default class NavBar extends React.Component {
   render() {
     var navItemStyle = {
       color: 'white'
-    }
+    };
     return (
       <div className="nav-container sticky">
           <Navbar color="black" light expand="md">
