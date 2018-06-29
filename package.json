@@ -9,6 +9,7 @@
     "react-cardstack": "^1.1.0",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.2.0",
+    "react-responsive": "^4.1.0",
     "react-reveal": "^1.2.1",
     "react-router-dom": "4.2.2",
     "react-router-hash-link": "^1.2.0",
