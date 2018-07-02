@@ -8,6 +8,7 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import NavBar from "./NavBar";
 import Photography from "./Photography";
 import Expertise from "./Expertise";
+import Footer from "./Footer";
 
 import './App.css';
 
@@ -41,8 +42,7 @@ class App extends Component {
           <div className="content">
             <Photography/>
             <Expertise/>
-            {/*<Experience/>*/}
-            {/*<Education/>*/}
+            <Footer/>
           </div>
           </Scrollbars>
         </div>    
