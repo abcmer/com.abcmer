@@ -52,19 +52,7 @@ export default class NavBar extends React.Component {
                     to="/#technical"
                     scroll={el => scrollFn(el, (0))}
                   >Expertise</NavLink>
-                </NavItem>
-                {/*<NavItem>*/}
-                  {/*<NavLink*/}
-                    {/*to="/#experience"*/}
-                    {/*scroll={el => scrollFn(el, -44)}*/}
-                  {/*>Experience</NavLink>*/}
-                {/*</NavItem>   */}
-                {/*<NavItem>*/}
-                  {/*<NavLink*/}
-                    {/*to="/#education"*/}
-                    {/*scroll={el => scrollFn(el, -44)}*/}
-                  {/*>Education</NavLink>*/}
-                {/*</NavItem>                                                           */}
+                </NavItem>                   */}
               </Nav>
             </Collapse>
           </Navbar>
