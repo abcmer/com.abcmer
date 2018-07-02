@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import TechnicalArea from './TechnicalArea';
+import ExpertiseCard from './ExpertiseCard';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const skills = [{
@@ -161,7 +161,7 @@ export default class Example extends React.Component {
           {skillCategories.map(category => {
             return(
               <Col sm={{ size: 4, offset: 0 }}>
-                <TechnicalArea category={category}/>
+                <ExpertiseCard category={category}/>
               </Col>
             )
           })}

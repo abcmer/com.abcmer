@@ -7,9 +7,7 @@ import {
 import { Scrollbars } from 'react-custom-scrollbars';
 import NavBar from "./NavBar";
 import Photography from "./Photography";
-import Experience from "./Experience";
-import Education from "./Education";
-import Technical from "./Technical";
+import Expertise from "./Expertise";
 
 import './App.css';
 
@@ -42,7 +40,7 @@ class App extends Component {
             style={{ height: this.state.innerHeight }}>
           <div className="content">
             <Photography/>
-            <Technical/>
+            <Expertise/>
             {/*<Experience/>*/}
             {/*<Education/>*/}
           </div>

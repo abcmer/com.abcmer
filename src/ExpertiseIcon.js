@@ -1,9 +1,9 @@
 import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './TechnicalIcon.css'
+import './ExpertiseIcon.css'
 
-const TechnicalIcon = (props) => {
+const ExpertiseIcon = (props) => {
   const imgSrc = props.imgSrc;
 
   const imgStyle = {
@@ -17,4 +17,4 @@ const TechnicalIcon = (props) => {
   );
 };
 
-export default TechnicalIcon;
+export default ExpertiseIcon;

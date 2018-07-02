@@ -3,12 +3,12 @@ import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 
-import TechnicalIcon from './TechnicalIcon';
+import ExpertiseIcon from './ExpertiseIcon';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './TechnicalArea.css'
+import './ExpertiseCard.css'
 
-const TechnicalArea = (props) => {
+const ExpertiseCard = (props) => {
   const categoryImgSrc = props.category.imgSrc;
   const categoryName = props.category.name;
   const skills = props.category.skills;
@@ -28,7 +28,7 @@ const TechnicalArea = (props) => {
             {skills.map(skill => {
               return(
                 <Col sm={{ size: 'auto', offset: 0}}>
-                  <TechnicalIcon imgSrc={skill.imgSrc} height='40px' width='40px'/>
+                  <ExpertiseIcon imgSrc={skill.imgSrc} height='40px' width='40px'/>
                 </Col>
               );
             })}
@@ -39,4 +39,4 @@ const TechnicalArea = (props) => {
   );
 };
 
-export default TechnicalArea;
+export default ExpertiseCard;
