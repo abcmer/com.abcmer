@@ -14,10 +14,10 @@
 }
 
 .card-header h1 {
-    margin: 2px;
+    padding: 8px;
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     font-size: 1.3rem;
-    margin-top: 1.3rem;
+    margin-top: 12px;
 }
 
 .card-body {
@@ -29,4 +29,16 @@
 .card-footer{
     height: 30px;
     border-radius: 25px;
+}
+
+.card-image {
+    height: 2rem;
+    width: 2rem;
+    margin: 8px;
+}
+
+.card-image svg {
+    height: 2rem;
+    width: 2rem;
+    margin: 8px;
 }

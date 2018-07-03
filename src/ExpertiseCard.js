@@ -1,7 +1,6 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
-import { Container, Row, Col } from 'reactstrap';
+import { Card, CardImg, CardBody } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import Slider from "react-slick";
 
 import ExpertiseIcon from './ExpertiseIcon';
@@ -13,6 +12,7 @@ const ExpertiseCard = (props) => {
   const categoryImgSrc = props.category.imgSrc;
   const categoryName = props.category.name;
   const skills = props.category.skills;
+  const getIcon = props.category.getIcon;
 
   const settings = {
     dots: true,
@@ -22,21 +22,19 @@ const ExpertiseCard = (props) => {
     slidesToScroll: 4
   };
 
-  const imgStyle = {
-    height: '50px',
-    width: '50px'
-  }
   return (
       <Card >
         <div className="card-header">
-          <CardImg width="100%" src={categoryImgSrc} alt="Card image cap" />
-          <h1>{categoryName}</h1>
+          <Row>
+            <div className="card-image">{getIcon()}</div>
+            <h1>{categoryName}</h1>
+          </Row>
         </div>
         <CardBody>
             <Slider {...settings}>
               {skills.map(skill => {
                 return(
-                  <Col sm={{ size: 'auto', offset: 0}}>
+                  <Col key={skill} sm={{ size: 'auto', offset: 0}}>
                     <ExpertiseIcon imgSrc={skill.imgSrc} height='40px' width='40px'/>
                   </Col>
                 );

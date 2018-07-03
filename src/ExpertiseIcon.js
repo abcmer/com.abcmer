@@ -5,6 +5,7 @@ import './ExpertiseIcon.css'
 
 const ExpertiseIcon = (props) => {
   const imgSrc = props.imgSrc;
+  const imgAlt = props.imgAlt;
 
   const imgStyle = {
     height: props.height,
@@ -12,7 +13,7 @@ const ExpertiseIcon = (props) => {
   }
   return (
     <div className="technical-icon">
-      <img src={imgSrc} style={imgStyle}></img>
+      <img src={imgSrc} alt={imgAlt} style={imgStyle}></img>
     </div>
   );
 };

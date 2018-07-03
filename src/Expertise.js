@@ -1,8 +1,27 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
+import FaMusic from 'react-icons/lib/fa/music';
+import FaCode from 'react-icons/lib/fa/code';
+import FaBarChart from 'react-icons/lib/fa/bar-chart';
+import FaServer from 'react-icons/lib/fa/server';
+import FaDatabase from 'react-icons/lib/fa/database';
+import FaWrench from 'react-icons/lib/fa/wrench';
+
 import ExpertiseCard from './ExpertiseCard';
+
 import 'bootstrap/dist/css/bootstrap.css';
+
+export const getFaMusic = () => <FaMusic/>;
+export const getFaCode = () => <FaCode/>;
+export const getFaBarChart = () => <FaBarChart/>;
+export const getFaServer = () => <FaServer/>;
+export const getFaDatabase = () => <FaDatabase/>;
+export const getFaWrench = () => <FaWrench/>;
+
+
+
+// const FaBeer = require('react-icons/lib/fa/beer');
 
 const skills = [{
   'name': 'Python',
@@ -23,15 +42,15 @@ const skills = [{
 }, {
   'name': 'ReactJS',
   'imgSrc': 'https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1198519/reactjs.png',
-  'skillCategory': 'web-development'
+  'skillCategory': 'frontend-dataviz'
 }, {
   'name': 'Bootstrap',
   'imgSrc': 'https://getbootstrap.com/docs/4.1/assets/img/bootstrap-stack.png',
-  'skillCategory': 'web-development'
+  'skillCategory': 'frontend-dataviz'
 }, {
   'name': 'Flask',
   'imgSrc': 'http://flask.pocoo.org/docs/0.12/_static/flask.png',
-  'skillCategory': 'web-development'
+  'skillCategory': 'frontend-dataviz'
 }, {
   'name': 'NodeJS',
   'imgSrc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png',
@@ -79,19 +98,19 @@ const skills = [{
 }, {
   'name': 'Tableau',
   'imgSrc': 'http://www.lib.washington.edu/dataservices/images/Tableau_Software_logo.png/image',
-  'skillCategory': 'dataViz'
+  'skillCategory': 'frontend-dataviz'
 }, {
   'name': 'Qlik',
   'imgSrc': 'https://www.scopesystems.com.au/assets/qlikview-1.png',
-  'skillCategory': 'dataViz'
+  'skillCategory': 'frontend-dataviz'
 }, {
   'name': 'D3',
   'imgSrc': 'https://ih0.redbubble.net/image.482086039.3183/flat,800x800,070,f.jpg',
-  'skillCategory': 'dataViz'
+  'skillCategory': 'frontend-dataviz'
 }, {
   'name': 'Zoomdata',
   'imgSrc': 'https://www.zoomdata.com/sites/all/themes/zoomadu/logo.png',
-  'skillCategory': 'dataViz'
+  'skillCategory': 'data'
 }, {
   'name': 'Git',
   'imgSrc': 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png',
@@ -108,46 +127,62 @@ const skills = [{
   'name': 'iMovie',
   'imgSrc': 'https://vignette.wikia.nocookie.net/logopedia/images/6/6a/IMovie4.png/revision/latest?cb=20150622190412',
   'skillCategory': 'utility'
-}]
+}, {
+  'name': 'Saxophone',
+  'imgSrc': 'https://cdn3.iconfinder.com/data/icons/saxophone/154/saxophone-round-512.png',
+  'skillCategory': 'creative'
+}, {
+  'name': 'Piano',
+  'imgSrc': 'https://cdn2.iconfinder.com/data/icons/eldorado-devices/40/piano_music-512.png',
+  'skillCategory': 'creative'
+}, {
+  'name': 'Film',
+  'imgSrc': 'https://png.icons8.com/metro/1600/film-reel.png',
+  'skillCategory': 'creative'
+}];
 
 const skillCategories = [{
   name: 'Languages',
   background: 'white',
-  imgSrc: 'https://d30y9cdsu7xlg0.cloudfront.net/png/143968-200.png',
+  getIcon: getFaCode,
   imgBorderColor: '#015389',
   yearsExperience: '3',
   skills: skills.filter(skill => skill.skillCategory === 'language'),
 }, {
-  name: 'Web Development',
+  name: 'Frontend / Data Viz',
   background: 'white',
-  imgSrc: 'https://cdn0.iconfinder.com/data/icons/scrum-team-symbols/220/frontend_developer-512.png',
+  getIcon: getFaBarChart,
+  imgBorderColor: '#9D4F09',
+  yearsExperience: '1',
+  skills: skills.filter(skill => skill.skillCategory === 'frontend-dataviz')
+}, {
+  name: 'Backend / DevOps',
+  background: 'white',
+  getIcon: getFaServer,
   imgBorderColor: '#086C32',
   yearsExperience: '5',
   skills: skills.filter(skill => skill.skillCategory === 'web-development')
 }, {
   name: 'Database',
   background: 'white',
-  imgSrc: 'https://cdn3.iconfinder.com/data/icons/programming/100/database_4-512.png',
+  getIcon: getFaDatabase,
   imgBorderColor: '#9D4F09',
   yearsExperience: '1',
   skills: skills.filter(skill => skill.skillCategory === 'data')
-  // skills: "MySQL, MongoDB, MS SQL Server, Pandas, Numpy, SQLAlchemy ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
-}, {
-  name: 'Data Visualization',
-  background: 'white',
-  imgSrc: 'https://cdn4.iconfinder.com/data/icons/presentations/100/presentation-icons-04-512.png',
-  imgBorderColor: '#9D4F09',
-  yearsExperience: '1',
-  skills: skills.filter(skill => skill.skillCategory === 'dataViz')
-  // skills: "Tableau, Qlik, D3 ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
 }, {
   name: 'Utility',
   background: 'white',
-  imgSrc: 'https://cdn3.iconfinder.com/data/icons/common-4/24/ui-01-512.png',
+  getIcon: getFaWrench,
   imgBorderColor: '#9D4F09',
   yearsExperience: '1',
   skills: skills.filter(skill => skill.skillCategory === 'utility')
-  // skills: "Git, REST, MS Team Foundation Server, Adobe Photoshop, Final Cut Studio, iMovie ....... ...... ..... ...... ..... .......... ............... .............. ......... .............. "
+}, {
+  name: 'Creativity',
+  background: 'white',
+  getIcon: getFaMusic,
+  imgBorderColor: '#9D4F09',
+  yearsExperience: '1',
+  skills: skills.filter(skill => skill.skillCategory === 'creative')
 }
 ];
 

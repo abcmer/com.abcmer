@@ -4,17 +4,26 @@ import {
   CarouselItem,
 } from 'reactstrap';
 
+import MdFullscreen from 'react-icons/lib/md/fullscreen';
+
 import './PhotoSlide.css'
 
 class PhotoSlide extends Component {
   constructor(props) {
     super(props);
-    this.state = { activeIndex: 0 };
+    this.state = {
+      activeIndex: 0,
+      imgStyle: {
+        opacity: '1',
+        backgroundColor: 'white'
+      }
+    };
     this.next = this.next.bind(this);
     this.previous = this.previous.bind(this);
     this.goToIndex = this.goToIndex.bind(this);
     this.onExiting = this.onExiting.bind(this);
     this.onExited = this.onExited.bind(this);
+    this.showOptions = this.showOptions.bind(this);
   }
 
   onExiting() {
@@ -40,11 +49,19 @@ class PhotoSlide extends Component {
     this.setState({ activeIndex: newIndex });
   }
 
+  showOptions() {
+    this.setState({
+      opacity: '.75'
+    })
+  }
+
   render() {
   	const carouselItemStyle = {
   		width: '25%',
   		display: 'inline-block'
-  	}
+  	};
+
+
 
     const { activeIndex } = this.state;
 
@@ -56,7 +73,7 @@ class PhotoSlide extends Component {
           key={photo.src}
           cssModule={carouselItemStyle}
         >
-          <img src={photo.src} alt={photo.alt} />
+          <img style={this.state.imgStyle} src={photo.src} alt={photo.alt} />
         </CarouselItem>
       );
     });
@@ -67,11 +84,10 @@ class PhotoSlide extends Component {
         next={this.next}
         previous={this.previous}
         pause='hover'
-        mouseEnter={this.next}
-        mouseOut={this.next}
+        mouseEnter={this.showOptions}
+        mouseLeave={this.next}
         interval={false}
-      >
-        {slides}
+      > {slides}
       </Carousel>
     );
   }
