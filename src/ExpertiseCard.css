@@ -24,6 +24,7 @@
     border-top:  3px solid #78BE20;
     border-bottom:  3px solid #78BE20;
     background-color: #0B233F;
+    padding: 1.75rem;
 }
 
 .card-footer{
@@ -42,3 +43,21 @@
     width: 2rem;
     margin: 8px;
 }
+
+.slick-dots li.slick-active button:before {
+    color: white;
+}
+
+.slick-dots li button:before {
+    color: #78BE20;
+}
+
+
+
+/*.slick-dots li button {*/
+    /*color: white;*/
+/*}*/
+
+/*.slick-dots li button {*/
+    /*color: white;*/
+/*}*/
