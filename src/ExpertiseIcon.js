@@ -12,9 +12,7 @@ const ExpertiseIcon = (props) => {
     width: props.width
   }
   return (
-    <div className="technical-icon">
-      <img src={imgSrc} alt={imgAlt} style={imgStyle}></img>
-    </div>
+    <img className="technical-icon" src={imgSrc} alt={imgAlt}></img>
   );
 };
 

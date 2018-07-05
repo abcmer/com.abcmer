@@ -10,6 +10,10 @@ import FaWrench from 'react-icons/lib/fa/wrench';
 
 import ExpertiseCard from './ExpertiseCard';
 
+import Python from './static/logos/python.png';
+import NodeJS from './static/logos/nodeJS.png';
+// const NodeJS = );
+
 import 'bootstrap/dist/css/bootstrap.css';
 
 export const getFaMusic = () => <FaMusic/>;
@@ -19,125 +23,133 @@ export const getFaServer = () => <FaServer/>;
 export const getFaDatabase = () => <FaDatabase/>;
 export const getFaWrench = () => <FaWrench/>;
 
-
-
-// const FaBeer = require('react-icons/lib/fa/beer');
-
 const skills = [{
   'name': 'Python',
-  'imgSrc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png',
+  'imgSrc': require('./static/logos/python.png'),
   'skillCategory': 'language',
 }, {
   'name': 'JavaScript',
-  'imgSrc': 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
+  'imgSrc': require('./static/logos/javascript.jpeg'),
   'skillCategory': 'language',
 }, {
   'name': 'HTML',
-  'imgSrc': 'http://thewebrocks.com/demos/html5-3d-css/html5.png',
+  'imgSrc': require('./static/logos/html5.png'),
   'skillCategory': 'language'
 }, {
   'name': 'CSS',
-  'imgSrc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/2000px-CSS3_logo_and_wordmark.svg.png',
+  'imgSrc': require('./static/logos/css.jpg'),
   'skillCategory': 'language'
 }, {
   'name': 'ReactJS',
-  'imgSrc': 'https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1198519/reactjs.png',
+  'imgSrc': require('./static/logos/react.png'),
   'skillCategory': 'frontend-dataviz'
 }, {
   'name': 'Bootstrap',
-  'imgSrc': 'https://getbootstrap.com/docs/4.1/assets/img/bootstrap-stack.png',
+  'imgSrc': require('./static/logos/bootstrap.png'),
   'skillCategory': 'frontend-dataviz'
 }, {
   'name': 'Flask',
-  'imgSrc': 'http://flask.pocoo.org/docs/0.12/_static/flask.png',
+  'imgSrc': require('./static/logos/flask.jpg'),
   'skillCategory': 'frontend-dataviz'
 }, {
   'name': 'NodeJS',
-  'imgSrc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png',
+  'imgSrc': require('./static/logos/nodeJS.png'),
   'skillCategory': 'web-development'
 }, {
   'name': 'Docker',
-  'imgSrc': 'https://ih1.redbubble.net/image.386900865.0087/flat,800x800,075,f.jpg',
+  'imgSrc': require('./static/logos/docker.png'),
   'skillCategory': 'web-development'
 }, {
   'name': 'Gunicorn',
-  'imgSrc': 'http://www.stickpng.com/assets/images/584807f6cef1014c0b5e48e0.png',
+  'imgSrc': require('./static/logos/gunicorn.png'),
   'skillCategory': 'web-development'
 }, {
   'name': 'Nginx',
-  'imgSrc': 'https://cdn-1.wp.nginx.com/wp-content/uploads/2015/04/NGINX_logo_rgb-01.png',
+  'imgSrc': require('./static/logos/nginx.png'),
   'skillCategory': 'web-development'
 }, {
   'name': 'uWSGI',
-  'imgSrc': 'https://www.20tab.com/media/article/image-top/u.png',
+  'imgSrc': require('./static/logos/uwsgi.png'),
   'skillCategory': 'web-development'
 }, {
   'name': 'MySQL',
-  'imgSrc': 'https://seeklogo.com/images/M/MySQL-logo-F6FF285A58-seeklogo.com.png',
+  'imgSrc': require('./static/logos/mysql.png'),
   'skillCategory': 'data'
 }, {
   'name': 'MongoDB',
-  'imgSrc': 'https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg',
+  'imgSrc': require('./static/logos/mongo.png'),
   'skillCategory': 'data'
 }, {
   'name': 'MS SQL Server',
-  'imgSrc': 'https://clipart.info/images/ccovers/1499955337microsoft-sql-server-logo-png.png',
+  'imgSrc': require('./static/logos/sqlServer.png'),
   'skillCategory': 'data'
 }, {
   'name': 'Pandas',
-  'imgSrc': 'https://geo-python.github.io/2017/_images/pandas_logo.png',
+  'imgSrc': require('./static/logos/pandas.png'),
   'skillCategory': 'data'
 }, {
-  'name': 'Numpy',
-  'imgSrc': 'https://1.bp.blogspot.com/-CHMzy5L0Qcw/Wpy00BAw-dI/AAAAAAAAG9g/fBinxajEzcshsZPSemZIt37JlqOWdDWbQCLcBGAs/s1600/numpy.jpeg',
+  'name': 'Postgres',
+  'imgSrc': require('./static/logos/postgres.png'),
   'skillCategory': 'data'
 }, {
-  'name': 'SQLAlchemy',
-  'imgSrc': 'https://www.fullstackpython.com/img/logos/sqlalchemy.jpg',
-  'skillCategory': 'data'
+  'name': 'Sql Alchemy',
+  'imgSrc': require('./static/logos/sqlAlchemy.png'),
+  'skillCategory': 'utility'
 }, {
   'name': 'Tableau',
-  'imgSrc': 'http://www.lib.washington.edu/dataservices/images/Tableau_Software_logo.png/image',
+  'imgSrc': require('./static/logos/tableau.gif'),
   'skillCategory': 'frontend-dataviz'
 }, {
   'name': 'Qlik',
-  'imgSrc': 'https://www.scopesystems.com.au/assets/qlikview-1.png',
+  'imgSrc': require('./static/logos/qlik.png'),
   'skillCategory': 'frontend-dataviz'
 }, {
   'name': 'D3',
-  'imgSrc': 'https://ih0.redbubble.net/image.482086039.3183/flat,800x800,070,f.jpg',
+  'imgSrc': require('./static/logos/d3Js.jpeg'),
   'skillCategory': 'frontend-dataviz'
 }, {
   'name': 'Zoomdata',
-  'imgSrc': 'https://www.zoomdata.com/sites/all/themes/zoomadu/logo.png',
+  'imgSrc': require('./static/logos/zoomdata.jpg'),
   'skillCategory': 'data'
 }, {
   'name': 'Git',
-  'imgSrc': 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png',
+  'imgSrc': require('./static/logos/git.png'),
   'skillCategory': 'utility'
 }, {
-  'name': 'MS TFS/VSTS',
-  'imgSrc': 'https://msdnshared.blob.core.windows.net/media/2016/10/favicon.png',
+  'name': 'Trello',
+  'imgSrc': require('./static/logos/trello.png'),
+  'skillCategory': 'utility'
+}, {
+  'name': 'Sublime',
+  'imgSrc': require('./static/logos/sublime.png'),
+  'skillCategory': 'utility'
+}, {
+  'name': 'Atom',
+  'imgSrc': require('./static/logos/atom.png'),
+  'skillCategory': 'utility'
+}, {
+  'name': 'InteliJ',
+  'imgSrc': require('./static/logos/intelliJ-IDEA.png'),
+  'skillCategory': 'utility'
+}, {
+  'name': 'Postman',
+  'imgSrc': require('./static/logos/postman.png'),
   'skillCategory': 'utility'
 }, {
   'name': 'Adobe Photoshop',
-  'imgSrc': 'https://seeklogo.com/images/A/adobe-photoshop-cs4-logo-A731187DA9-seeklogo.com.jpg',
-  'skillCategory': 'utility'
-}, {
-  'name': 'iMovie',
-  'imgSrc': 'https://vignette.wikia.nocookie.net/logopedia/images/6/6a/IMovie4.png/revision/latest?cb=20150622190412',
+  'imgSrc': require('./static/logos/photoshop.jpg'),
   'skillCategory': 'utility'
 }, {
   'name': 'Saxophone',
-  'imgSrc': 'https://cdn3.iconfinder.com/data/icons/saxophone/154/saxophone-round-512.png',
+  'imgSrc': require('./static/logos/saxophone.png'),
   'skillCategory': 'creative'
 }, {
   'name': 'Piano',
-  'imgSrc': 'https://cdn2.iconfinder.com/data/icons/eldorado-devices/40/piano_music-512.png',
+  'imgSrc': require('./static/logos/piano.png'),
   'skillCategory': 'creative'
 }, {
   'name': 'Film',
-  'imgSrc': 'https://png.icons8.com/metro/1600/film-reel.png',
+  'imgSrc': require('./static/logos/film.png'),
   'skillCategory': 'creative'
 }];
 
@@ -186,10 +198,8 @@ const skillCategories = [{
 }
 ];
 
-
 export default class Example extends React.Component {
   render() {
-
     return (
       <Container id="technical" className="content-block-normal">
         <Row>

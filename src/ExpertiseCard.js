@@ -35,7 +35,7 @@ const ExpertiseCard = (props) => {
               {skills.map(skill => {
                 return(
                   <Col key={skill} sm={{ size: 'auto', offset: 0}}>
-                    <ExpertiseIcon imgSrc={skill.imgSrc} height='40px' width='40px'/>
+                    <ExpertiseIcon imgSrc={skill.imgSrc} imgAlt={skill.name} height='40px' width='40px'/>
                   </Col>
                 );
               })}
