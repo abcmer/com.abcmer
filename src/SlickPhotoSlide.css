@@ -1,0 +1,9 @@
+img {
+  width: 100%;
+  border-bottom: 2px solid #D3D3D3;
+}
+
+.carousel {
+	width: 100%;
+	display: inline-block;
+}

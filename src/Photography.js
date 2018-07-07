@@ -4,6 +4,7 @@ import MediaQuery from 'react-responsive';
 
 import PhotoSlide from './PhotoSlide'
 import './Photography.css'
+import SlickPhotoSlide from "./SlickPhotoSlide";
 
 class Photography extends Component {
   render() {
@@ -198,36 +199,6 @@ class Photography extends Component {
 
   return (
     <div id='photography'>
-    <MediaQuery minDeviceWidth={2224}>
-      {(matches) => {
-        if (matches) {
-          return (
-            <div className="photo-canvas">
-              <Row className='no-gutters'>
-                {photosRow1.map(items =>
-                  <Col><PhotoSlide photos={items}/></Col>
-                )
-                }
-              </Row>
-              <Row className='no-gutters'>
-                {photosRow2.map(items =>
-                  <Col><PhotoSlide photos={items}/></Col>
-                )
-                }
-              </Row>
-              <Row className='no-gutters'>
-                {photosRow3.map(items =>
-                  <Col><PhotoSlide photos={items}/></Col>
-                )
-                }
-              </Row>
-            </div>
-        );
-        } else {
-          return <div></div>;
-        }
-      }}
-    </MediaQuery>
     <MediaQuery maxWidth={2224}>
         {(matches) => {
           if (matches) {
@@ -235,19 +206,19 @@ class Photography extends Component {
               <div className="photo-canvas">
                 <Row className='no-gutters'>
                   {photosRow1.map(items =>
-                    <Col><PhotoSlide photos={items}/></Col>
+                    <Col><SlickPhotoSlide photos={items}/></Col>
                   )
                   }
                 </Row>
                 <Row className='no-gutters'>
                   {photosRow2.map(items =>
-                    <Col><PhotoSlide photos={items}/></Col>
+                    <Col><SlickPhotoSlide photos={items}/></Col>
                   )
                   }
                 </Row>
                 <Row className='no-gutters'>
                   {photosRow3.map(items =>
-                    <Col><PhotoSlide photos={items}/></Col>
+                    <Col><SlickPhotoSlide photos={items}/></Col>
                   )
                   }
                 </Row>
