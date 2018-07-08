@@ -74,7 +74,7 @@ class SlickPhotoSlide extends Component {
     });
 
     const settings = {
-      dots: true,
+      dots: false,
       arrows: false,
       infinite: true,
       speed: 500,
