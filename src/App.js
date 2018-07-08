@@ -1,33 +1,51 @@
 import React, { Component } from 'react';
 import {
-  Route,
   HashRouter
 } from "react-router-dom";
+
+import { Scrollbars } from 'react-custom-scrollbars';
 import NavBar from "./NavBar";
-import Home from "./Home";
-import TechnicalTools from "./TechnicalTools";
-import Experience from "./Experience";
-import Education from "./Education";
+import Photography from "./Photography";
+import Expertise from "./Expertise";
+import Footer from "./Footer";
 
 import './App.css';
 
+export default class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      innerHeight: 0
+    }
+  }
 
-class App extends Component {
+  updateDimensions() {
+    this.setState({
+      innerHeight: window.innerHeight
+    });
+    console.log(this.state.innerHeight);
+  }
+
+  componentDidMount() {
+    this.updateDimensions();
+    window.addEventListener("resize", this.updateDimensions.bind(this));
+  }
+
   render() {
     return (     
       <HashRouter>
         <div>          
-          <NavBar />              
+          <NavBar />
+          <Scrollbars
+            style={{ height: this.state.innerHeight }}>
           <div className="content">
-            <Route exact path="/" component={Home}/>
-            <Route path="/technicalskills" component={TechnicalTools}/>
-            <Route path="/experience" component={Experience}/>
-            <Route path="/education" component={Education}/>                          
-          </div>         
+            <Photography/>
+            <Expertise/>
+            <Footer/>
+          </div>
+          </Scrollbars>
         </div>    
       </HashRouter>
     );
   }
 }
-
-export default App;

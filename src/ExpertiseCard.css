@@ -1,0 +1,53 @@
+.card {
+    margin: 5px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card .card-img {
+    height: 80px;
+    width: 80px;
+}
+
+.card-header {
+    display: flex;
+    border-radius: 25px;
+}
+
+.card-header h1 {
+    padding: 8px;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 1.3rem;
+    margin-top: 12px;
+}
+
+.card-body {
+    border-top:  3px solid #78BE20;
+    border-bottom:  3px solid #78BE20;
+    background-color: #0B233F;
+    padding: 1.75rem;
+}
+
+.card-footer{
+    height: 30px;
+    border-radius: 25px;
+}
+
+.card-image {
+    height: 2rem;
+    width: 2rem;
+    margin: 8px;
+}
+
+.card-image svg {
+    height: 2rem;
+    width: 2rem;
+    margin: 8px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: white;
+}
+
+.slick-dots li button:before {
+    color: #78BE20;
+}

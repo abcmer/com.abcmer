@@ -25,7 +25,7 @@ export default class Education extends Component {
   }
   render() {
     return (
-      <div>
+      <div id='education'>
         <Nav tabs>
           <NavItem>
             <NavLink
