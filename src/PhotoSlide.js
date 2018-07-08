@@ -62,7 +62,6 @@ class PhotoSlide extends Component {
   	};
 
 
-
     const { activeIndex } = this.state;
 
     const slides = this.props.photos.map((photo) => {
