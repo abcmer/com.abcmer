@@ -53,8 +53,8 @@ export default class NavBar extends React.Component {
                   scroll={el => scrollFn(el, (0))}
                 >Expertise</NavLink>
                 <a href="https://abcmer.github.io/">Marathon Blog</a>
-              </NavItem>                   */}
-              </Nav>
+              </NavItem>
+            </Nav>
           </Collapse>
         </Navbar>
       </div>
