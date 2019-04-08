@@ -37,25 +37,26 @@ export default class NavBar extends React.Component {
     };
     return (
       <div className="nav-container sticky">
-          <Navbar color="black" light expand="md">
-            <NavbarToggler onClick={this.toggle} />
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-sm-0 " navbar>
-                <NavItem>
-                  <NavLink
-                    to="/#photography"
-                    scroll={el => scrollFn(el, -44)}
-                  >Adam Siemer</NavLink>
-                </NavItem>
-                <NavItem style={navItemStyle}>
-                  <NavLink
-                    to="/#technical"
-                    scroll={el => scrollFn(el, (0))}
-                  >Expertise</NavLink>
-                </NavItem>                   */}
+        <Navbar color="black" light expand="md">
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-sm-0 " navbar>
+              <NavItem>
+                <NavLink
+                  to="/#photography"
+                  scroll={el => scrollFn(el, -44)}
+                >Adam Siemer</NavLink>
+              </NavItem>
+              <NavItem style={navItemStyle}>
+                <NavLink
+                  to="/#technical"
+                  scroll={el => scrollFn(el, (0))}
+                >Expertise</NavLink>
+                <a href="https://abcmer.github.io/">Marathon Blog</a>
+              </NavItem>                   */}
               </Nav>
-            </Collapse>
-          </Navbar>
+          </Collapse>
+        </Navbar>
       </div>
     );
   }
