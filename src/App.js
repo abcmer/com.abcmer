@@ -1,22 +1,20 @@
-import React, { Component } from 'react';
-import {
-  HashRouter
-} from "react-router-dom";
+import React, { Component } from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 
-import { Scrollbars } from 'react-custom-scrollbars';
+import { Scrollbars } from "react-custom-scrollbars";
 import NavBar from "./NavBar";
 import Photography from "./Photography";
 import Expertise from "./Expertise";
 import Footer from "./Footer";
 
-import './App.css';
+import "./App.css";
 
 export default class App extends Component {
   constructor() {
     super();
     this.state = {
       innerHeight: 0
-    }
+    };
   }
 
   updateDimensions() {
@@ -32,20 +30,19 @@ export default class App extends Component {
   }
 
   render() {
-    return (     
-      <HashRouter>
-        <div>          
+    return (
+      <BrowserRouter>
+        <div>
           <NavBar />
-          <Scrollbars
-            style={{ height: this.state.innerHeight }}>
-          <div className="content">
-            <Photography/>
-            <Expertise/>
-            <Footer/>
-          </div>
+          <Scrollbars style={{ height: this.state.innerHeight }}>
+            <div className="content">
+              <Photography />
+              <Expertise />
+              <Footer />
+            </div>
           </Scrollbars>
-        </div>    
-      </HashRouter>
+        </div>
+      </BrowserRouter>
     );
   }
 }
