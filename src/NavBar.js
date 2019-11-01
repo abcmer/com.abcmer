@@ -41,9 +41,9 @@ export default class NavBar extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem style={navItemStyle}>
-                <NavLink to="/#technical" scroll={el => scrollFn(el, 0)}>
+                {/* <NavLink to="/#technical" scroll={el => scrollFn(el, 0)}>
                   Expertise
-                </NavLink>
+                </NavLink> */}
                 <a href="https://drive.google.com/file/d/0B-R24Rv9imxkd3dnc3BYV1ZjeW8/view?usp=sharing">
                   Resume
                 </a>

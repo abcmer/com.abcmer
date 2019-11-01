@@ -37,8 +37,8 @@ export default class App extends Component {
           <Scrollbars style={{ height: this.state.innerHeight }}>
             <div className="content">
               <Photography />
-              <Expertise />
-              <Footer />
+              {/* <Expertise /> */}
+              {/* <Footer /> */}
             </div>
           </Scrollbars>
         </div>
