@@ -1,6 +1,15 @@
+# build environment
+FROM node:12.2.0-alpine as build
+WORKDIR /app
+ENV PATH /app/node_modules/.bin:$PATH
+COPY package.json /app/package.json
+RUN yarn install
+RUN yarn add react-scripts@3.0.1 -g
+COPY . /app
+RUN yarn run build
 
-FROM nginx:1.15.8-alpine
-COPY ./build /var/www
-COPY nginx.conf /etc/nginx/nginx.conf
+# production environment
+FROM nginx:1.16.0-alpine
+COPY --from=build /app/build /usr/share/nginx/html
 EXPOSE 80
-ENTRYPOINT ["nginx","-g","daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
