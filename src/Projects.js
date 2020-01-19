@@ -28,26 +28,25 @@ export default class Projects extends React.Component {
         <Row>
           {projects.map(project => {
             return (
-              <Col sm={{ size: 3, offset: 1 }}>
-                <div>
-                  <h3>{project.name}</h3>
-                  <img src={project.imgSrc} alt={project.imgAlt} />
-                </div>
-                <Row>
-                  <Col />
-                  <Col>
-                    <a href={project.github}>Github</a>
-                  </Col>
-                  <Col>
-                    <a href={project.link}>Link</a>
-                  </Col>
-                  <Col />
-                </Row>
+              <Col className="project" sm={{ size: 3, offset: 1 }}>
+                <a href={project.link}>
+                  <div>
+                    <h3>{project.name}</h3>
+                    <img src={project.imgSrc} alt={project.imgAlt} />
+                  </div>
+                  <Row>
+                    <Col />
+                    <Col>
+                      <a href={project.github}>Github</a>
+                    </Col>
+                    <Col />
+                  </Row>
+                </a>
               </Col>
             );
           })}
         </Row>
-      </Container>
+      </Container >
     );
   }
 }

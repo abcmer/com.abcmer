@@ -1,5 +1,6 @@
 .projects {
   margin-top: 4rem;
+  background-color: black;
 }
 
 .projects img {
@@ -9,4 +10,25 @@
 
 .projects h3 {
   text-align: center;
+  color: white;
+}
+
+.projects a {
+  color: white;
+}
+
+.project a:hover {
+  text-decoration: none;
+}
+
+.project {
+  border: 2px solid #0b233f;
+  border-radius: 10px;
+  border-width: 5px;
+}
+
+.project:hover {
+  border: 2px solid white;
+  border-radius: 10px;
+  border-width: 5px;
 }
