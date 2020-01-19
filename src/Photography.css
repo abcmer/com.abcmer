@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 255px 255px 255px 255px 255px 255px;
+  grid-template-columns: 16.666666666% 16.666666666% 16.666666666% 16.666666666% 16.666666666% 16.666666666%;
 }
 .grid-item {
   font-size: 30px;
@@ -16,33 +16,33 @@
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1275px) {
   .grid-container {
-    grid-template-columns: 255px 255px 255px 255px 255px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
   }
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1020px) {
   .grid-container {
-    grid-template-columns: 255px 255px 255px 255px;
+    grid-template-columns: 25% 25% 25% 25%;
   }
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 765px) {
   .grid-container {
-    grid-template-columns: 255px 255px 255px;
+    grid-template-columns: 33.3333333% 33.3333333% 33.3333333%;
   }
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 510px) {
   .grid-container {
-    grid-template-columns: 255px 255px;
+    grid-template-columns: 50% 50%;
   }
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 255px) {
+@media screen and (max-width: 16.666666666%) {
   .grid-container {
-    grid-template-columns: 255px;
+    grid-template-columns: 100%;
   }
 }
