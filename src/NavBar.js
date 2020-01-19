@@ -36,7 +36,7 @@ export default class NavBar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-sm-0 " navbar>
               <NavItem>
-                <NavLink to="/#photography" scroll={el => scrollFn(el, -44)}>
+                <NavLink to="/#" scroll={el => scrollFn(el, -44)}>
                   Adam Siemer
                 </NavLink>
               </NavItem>
