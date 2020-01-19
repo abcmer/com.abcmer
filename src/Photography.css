@@ -1,8 +1,48 @@
-#photography {
-	background-color: black;
+.grid-container {
+  display: grid;
+  grid-template-columns: 255px 255px 255px 255px 255px 255px;
+}
+.grid-item {
+  font-size: 30px;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
 }
 
-.photo-canvas .col {
-	max-width: 16.66666666%
+.grid-item img {
+  width: 100%;
 }
 
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1275px) {
+  .grid-container {
+    grid-template-columns: 255px 255px 255px 255px 255px;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1020px) {
+  .grid-container {
+    grid-template-columns: 255px 255px 255px 255px;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 765px) {
+  .grid-container {
+    grid-template-columns: 255px 255px 255px;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 510px) {
+  .grid-container {
+    grid-template-columns: 255px 255px;
+  }
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 255px) {
+  .grid-container {
+    grid-template-columns: 255px;
+  }
+}

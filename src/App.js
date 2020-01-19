@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import { Scrollbars } from "react-custom-scrollbars";
 import NavBar from "./NavBar";
 import Photography from "./Photography";
-import Expertise from "./Expertise";
-import Footer from "./Footer";
 
 import "./App.css";
 
