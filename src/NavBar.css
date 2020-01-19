@@ -1,17 +1,21 @@
 .nav-container {
-  background-color: #0B233F;
+  background-color: #0b233f;
   z-index: 1;
   box-shadow: 2px 2px black;
+}
+
+.navbar {
+  padding-left: 0px;
 }
 
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
 .wrapper {
-	max-width: calc(800px - (30px * 2));
+  max-width: calc(800px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -20,24 +24,22 @@
 a h1 {
   color: white;
   text-decoration: none;
-	font-size: 1.5rem;
-	margin-bottom: 0;
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }
 
 a.active h1 {
-  color: #236192
+  color: #236192;
 }
 
 a.active:hover h1 {
-  color: #236192
+  color: #236192;
 }
-
 
 a h1:hover {
-  color: #A9A9A9;
+  color: #a9a9a9;
   text-decoration: none;
 }
-
 
 li.nav-item a {
   color: white;
@@ -46,17 +48,28 @@ li.nav-item a {
   display: inline-block;
   text-align: left;
   list-style-type: none;
-  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  li.nav-item a {
+    display: block;
+  }
 }
 
 li.nav-item a.active {
-  color: #78BD20
+  color: #78bd20;
 }
 
 li.nav-item a.active:hover {
-  color: #78BD20
+  color: #78bd20;
 }
 
 li.nav-item a:hover {
-  color: #A9A9A9
+  color: #a9a9a9;
+}
+
+.navbar-collapse {
+  padding-top: 0.25rem;
 }
