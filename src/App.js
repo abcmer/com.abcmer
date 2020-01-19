@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { BrowserRouter } from "react-router-dom";
-
-import { Scrollbars } from "react-custom-scrollbars";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
 import Photography from "./Photography";
+import Portfolio from "./Projects";
 
 import "./App.css";
 
@@ -29,18 +28,23 @@ export default class App extends Component {
 
   render() {
     return (
-      <BrowserRouter>
-        <div>
-          <NavBar />
-          <Scrollbars style={{ height: this.state.innerHeight }}>
+      <div>
+        <Router>
+          <div>
+            <NavBar />
             <div className="content">
-              <Photography />
-              {/* <Expertise /> */}
-              {/* <Footer /> */}
+              <Switch>
+                <Route exact path="/">
+                  <Photography />
+                </Route>
+                <Route exact path="/projects">
+                  <Portfolio />
+                </Route>
+              </Switch>
             </div>
-          </Scrollbars>
-        </div>
-      </BrowserRouter>
-    );
+          </div>
+        </Router>
+      </div>
+    )
   }
 }

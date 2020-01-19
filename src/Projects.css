@@ -1,0 +1,12 @@
+.projects {
+  margin-top: 4rem;
+}
+
+.projects img {
+  height: 100%;
+  width: 100%;
+}
+
+.projects h3 {
+  text-align: center;
+}

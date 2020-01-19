@@ -1,14 +1,8 @@
 import React from "react";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
-
-import { NavHashLink as NavLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 import "./NavBar.css";
-
-const scrollFn = (element, offset) => {
-  element.scrollIntoView({ block: "start" });
-  window.scrollBy(0, offset);
-};
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -36,14 +30,14 @@ export default class NavBar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-sm-0 " navbar>
               <NavItem>
-                <NavLink to="/#" scroll={el => scrollFn(el, -44)}>
+                <Link to="/">
                   Adam Siemer
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem style={navItemStyle}>
-                {/* <NavLink to="/#technical" scroll={el => scrollFn(el, 0)}>
-                  Expertise
-                </NavLink> */}
+                <Link to="/projects">
+                  Projects
+                </Link>
                 <a href="https://drive.google.com/file/d/0B-R24Rv9imxkd3dnc3BYV1ZjeW8/view?usp=sharing">
                   Resume
                 </a>
