@@ -41,7 +41,7 @@
   }
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 16.666666666%) {
+@media screen and (max-width: 255px) {
   .grid-container {
     grid-template-columns: 100%;
   }
