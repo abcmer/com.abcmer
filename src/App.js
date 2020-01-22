@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
-import Photography from "./Photography";
+import PhotoGrid from "./PhotoGrid";
 import Portfolio from "./Projects";
 
 import "./App.css";
@@ -10,15 +10,16 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      innerHeight: 0
+      innerHeight: 0,
+      innerWidth: 0
     };
   }
 
   updateDimensions() {
     this.setState({
-      innerHeight: window.innerHeight
+      innerHeight: window.innerHeight,
+      innerWidth: window.innerWidth
     });
-    console.log(this.state.innerHeight);
   }
 
   componentDidMount() {
@@ -35,7 +36,7 @@ export default class App extends Component {
             <div className="content">
               <Switch>
                 <Route exact path="/">
-                  <Photography />
+                  <PhotoGrid />
                 </Route>
                 <Route exact path="/projects">
                   <Portfolio />
