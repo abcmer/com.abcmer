@@ -2,30 +2,38 @@ import React, { useState, useEffect } from 'react';
 
 import './PhotoGrid.css'
 
+function importAll(r) {
+  return r.keys().map(r);
+}
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+const images = shuffle(importAll(require.context('./static/photography', false, /\.(png|jpe?g|svg)$/)));
+console.log(images)
+
+
 const PhotoGrid = () => {
 
   const [innerWidth, setInnerWidth ] = useState(window.innerWidth);
   const [photosToShow, setPhotosToShow] = useState([]);
-  const [photoBacklog, setPhotoBacklog] = useState([
-    require("./static/photography/westpalm_street_art.jpg"),
-    require("./static/photography/giant_peach.jpg"),
-    require("./static/photography/phish_northerly_island_2017.jpg"),
-    require("./static/photography/buddy_guy_red_suit.jpg"),
-    require("./static/photography/linguine_and_lobster.jpg"),
-    require("./static/photography/cubs_win.jpg"),
-    require("./static/photography/grand_lake_camping.jpg"),
-    require("./static/photography/pikes_place_market_july_2016.jpg"),
-    require("./static/photography/rainbow_wickerpark_summer_2018.jpg"),
-    require("./static/photography/muddy_waters_building_art.jpg"),
-    require("./static/photography/orlando_conference_center.jpg"),
-    require("./static/photography/docs_motto_kingston_mines.jpg"),
-    require("./static/photography/low_country_aftermath.jpg"),
-    require("./static/photography/leon_bridges.jpg"),
-    require("./static/photography/record_store_display.jpg"),
-    require("./static/photography/lakeview_sunset.jpg"),
-    require("./static/photography/diversey_driving_range_tree.jpg"),
-    require("./static/photography/houston_garage_pingpong.jpg"),
-  ]);
+  const [photoBacklog, setPhotoBacklog] = useState(images);
 
   useEffect(() => {
     handlePhotosToShow();
@@ -43,21 +51,28 @@ const PhotoGrid = () => {
   }
 
   const handlePhotoChange = (oldPhotoIndex) => {
-    console.log('oldPhotoIndex:', oldPhotoIndex)
-    const newPhoto = photoBacklog[photoBacklog.length - 1]
+    console.log('handlePhotoChange')
+    // Make copy of PhotosToShow and PhotosBacklog
+    let nextPhotosToShow = photosToShow;
+    let nextPhotoBacklog = photoBacklog;
+
+    // Identify old and photo
     const oldPhoto = photosToShow[oldPhotoIndex]
+    const newPhoto = nextPhotoBacklog.pop()
     console.log("oldPhoto:", oldPhoto)
     console.log("newPhoto:", newPhoto)
-    const photosToSet = [...photosToShow]
-    photosToSet[oldPhotoIndex] = newPhoto;
-    console.log('photosToSet:', photosToSet)
-    setPhotosToShow(photosToSet)
-    setPhotoBacklog([...photoBacklog, oldPhoto]);
 
-    // const newPhoto = photoBacklog[]
-    // setPhotosToShow(photosToShow.filter(photo => photo !== oldPhoto))
-    // setPhotoBacklog([...photoBacklog, oldPhoto]);
+    // Insert new photo into old photo index
+    nextPhotosToShow[oldPhotoIndex] = newPhoto;
+
+    // Push old photo into photoBacklog
+    nextPhotoBacklog = [oldPhoto, ...nextPhotoBacklog]
+
+    // Set new states
+    setPhotosToShow(nextPhotosToShow)
+    setPhotoBacklog(nextPhotoBacklog)
   }
+
   const calcNumPhotosToShow = (width) => {
     if (width > 1275) {
       return 18;
@@ -73,25 +88,14 @@ const PhotoGrid = () => {
   }
 
   const handlePhotosToShow = () => {
-    console.log()
+    console.log('handlePhotosToShow')
     const width = window.innerWidth;
     const numToShow = calcNumPhotosToShow(width);
     const photos = photoBacklog.slice(0, numToShow)
     setPhotosToShow(photos)
   }
-
-  // const getNextPhoto = (index) => {
-  //   console.log("clicked")
-  //   const nextPhoto = photosAll.pop()
-  //   console.log(nextPhoto)
-  //   const photoClicked = photosToShow[index]
-
-  //   photosAll.push(photoClicked)
-  //   photosToShow[index] = nextPhoto
-  // }
-
   return (
-    <div class="grid-container">
+    <div className="grid-container">
       {photosToShow.map((p,i) => {
         return (
           <div key={i} onMouseOver={() => handlePhotoChange(i)} className="grid-item">
