@@ -6,7 +6,7 @@ function importAll(r) {
   return r.keys().map(r);
 }
 
-function shuffle(array) {
+const shuffle = (array) => {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
   // While there remain elements to shuffle...
@@ -25,7 +25,11 @@ function shuffle(array) {
   return array;
 }
 
-const images = shuffle(importAll(require.context('./static/photography', false, /\.(png|jpe?g|svg)$/)));
+// let images = shuffle(importAll(require.context('./static/photography', false, /\.(png|jpe?g|svg)$/)));
+let images = importAll(require.context('./static/photography', false, /\.(png|jpe?g|svg)$/));
+shuffle(images)
+
+
 console.log(images)
 
 
