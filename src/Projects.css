@@ -25,6 +25,7 @@
   border: 2px solid #0b233f;
   border-radius: 10px;
   border-width: 5px;
+  margin-top: 1rem;
 }
 
 .project:hover {
