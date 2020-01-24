@@ -26,7 +26,6 @@ const shuffle = (array) => {
 }
 
 let images = importAll(require.context('./static/photography', false, /\.(png|jpe?g|svg)$/));
-console.log(images)
 shuffle(images)
 
 const PhotoGrid = () => {
