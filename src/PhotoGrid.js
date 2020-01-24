@@ -28,6 +28,9 @@ const shuffle = (array) => {
 let images = importAll(require.context('./static/photography', false, /\.(png|jpe?g|svg)$/));
 shuffle(images)
 
+//Disable scrolling on PhotoGrid
+document.body.style.overflow = "hidden"
+
 const PhotoGrid = () => {
 
   const [innerWidth, setInnerWidth ] = useState(window.innerWidth);
@@ -74,15 +77,15 @@ const PhotoGrid = () => {
 
   const calcNumPhotosToShow = (width) => {
     if (width > 1275) {
-      return 18;
+      return 24;
     } else if (width > 1020) {
-      return 15;
+      return 20;
     } else if (width > 765) {
-      return 12;
+      return 16;
     } else if (width > 510) {
-      return 9;
+      return 12;
     } else {
-      return 6;
+      return 8;
     }
   }
 
@@ -97,7 +100,7 @@ const PhotoGrid = () => {
     <div className="grid-container">
       {photosToShow.map((p,i) => {
         return (
-          <div key={i} onMouseOver={() => handlePhotoChange(i)} className="grid-item">
+          <div key={i} onMouseOut={() => handlePhotoChange(i)} className="grid-item">
             <img src={p} alt="alt text" />
           </div>)
       })}
