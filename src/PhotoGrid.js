@@ -97,11 +97,11 @@ const PhotoGrid = () => {
     setPhotosToShow(photos)
   }
   return (
-    <div className="grid-container">
+    <div className="grid-container fade-in">
       {photosToShow.map((p,i) => {
         return (
-          <div key={i} onMouseOut={() => handlePhotoChange(i)} className="grid-item">
-            <img src={p} alt="alt text" />
+          <div className="grid-item" key={i} onMouseOut={() => handlePhotoChange(i)}>
+            <img  src={p} alt="alt text" />
           </div>)
       })}
     </div>
