@@ -24,7 +24,7 @@ export default class Projects extends React.Component {
       },
     ];
     return (
-      <Container id="projects" className="projects">
+      <Container id="projects" className="projects fade-in">
         <Row>
           {projects.map(project => {
             return (

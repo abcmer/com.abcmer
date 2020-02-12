@@ -11,7 +11,8 @@ export default class App extends Component {
     super();
     this.state = {
       innerHeight: 0,
-      innerWidth: 0
+      innerWidth: 0,
+      initialLoad: true,
     };
   }
 
