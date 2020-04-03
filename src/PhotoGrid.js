@@ -33,7 +33,7 @@ document.body.style.overflow = "hidden"
 
 const PhotoGrid = () => {
 
-  const [innerWidth, setInnerWidth ] = useState(window.innerWidth);
+  const [innerWidth, setInnerWidth] = useState(window.innerWidth);
   const [photosToShow, setPhotosToShow] = useState([]);
   const [photoBacklog, setPhotoBacklog] = useState(images);
 
@@ -98,10 +98,10 @@ const PhotoGrid = () => {
   }
   return (
     <div className="grid-container fade-in">
-      {photosToShow.map((p,i) => {
+      {photosToShow.map((p, i) => {
         return (
           <div className="grid-item" key={i} onMouseOut={() => handlePhotoChange(i)}>
-            <img  src={p} alt="alt text" />
+            <img src={p} alt="alt text" />
           </div>)
       })}
     </div>

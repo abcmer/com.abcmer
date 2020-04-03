@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
 import PhotoGrid from "./PhotoGrid";
 import Portfolio from "./Projects";
+import Books from "./Books";
 
 import "./App.css";
 
@@ -41,6 +42,9 @@ export default class App extends Component {
                 </Route>
                 <Route exact path="/projects">
                   <Portfolio />
+                </Route>
+                <Route exact path="/books">
+                  <Books />
                 </Route>
               </Switch>
             </div>

@@ -30,6 +30,11 @@ const Example = (props) => {
               </NavLink>
             </NavItem>
             <NavItem>
+              <NavLink href="/books">
+                Books
+              </NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="https://drive.google.com/file/d/0B-R24Rv9imxkd3dnc3BYV1ZjeW8/view?usp=sharing">
                 Resume
               </NavLink>
@@ -74,6 +79,9 @@ export default class NavBar extends React.Component {
               <NavItem style={navItemStyle}>
                 <Link to="/projects">
                   Projects
+                </Link>
+                <Link to="/books">
+                  Book Log
                 </Link>
                 <a href="https://drive.google.com/file/d/0B-R24Rv9imxkd3dnc3BYV1ZjeW8/view?usp=sharing">
                   Resume
