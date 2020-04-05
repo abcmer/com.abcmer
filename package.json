@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "install": "^0.13.0",
+    "pdf-viewer-reactjs": "^2.0.5",
     "react": "^16.2.0",
     "react-card-flip": "^0.2.1",
     "react-cardstack": "^1.1.0",

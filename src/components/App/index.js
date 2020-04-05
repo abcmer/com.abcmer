@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import NavBar from "./NavBar";
-import PhotoGrid from "./PhotoGrid";
-import Portfolio from "./Projects";
+import NavBar from "../NavBar";
+import PhotoGrid from "../PhotoGrid";
+import Portfolio from "../Projects";
 
 import "./App.css";
 
