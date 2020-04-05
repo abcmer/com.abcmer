@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
-
 import './PhotoGrid.css'
+
+const files = require.context('../../static/photography')
+console.log('files', files)
+
 
 function importAll(r) {
   return r.keys().map(r);
@@ -25,9 +28,6 @@ const shuffle = (array) => {
   return array;
 }
 
-let images = importAll(require.context('../../static/photography', false, /\.(png|jpe?g|svg)$/));
-shuffle(images)
-
 //Disable scrolling on PhotoGrid
 document.body.style.overflow = "hidden"
 
@@ -35,7 +35,7 @@ const PhotoGrid = () => {
 
   const [innerWidth, setInnerWidth ] = useState(window.innerWidth);
   const [photosToShow, setPhotosToShow] = useState([]);
-  const [photoBacklog, setPhotoBacklog] = useState(images);
+  const [photoBacklog, setPhotoBacklog] = useState(shuffle(importAll(require.context('../../static/photography', false, /\.(png|jpe?g|svg)$/))));
 
   useEffect(() => {
     handlePhotosToShow();
@@ -47,13 +47,11 @@ const PhotoGrid = () => {
   }, [])
 
   const handleResize = () => {
-    console.log(window.innerWidth)
     setInnerWidth(window.innerWidth)
     handlePhotosToShow()
   }
 
   const handlePhotoChange = (oldPhotoIndex) => {
-    console.log('handlePhotoChange')
     // Make copy of PhotosToShow and PhotosBacklog
     let nextPhotosToShow = photosToShow;
     let nextPhotoBacklog = photoBacklog;
@@ -61,8 +59,6 @@ const PhotoGrid = () => {
     // Identify old and photo
     const oldPhoto = photosToShow[oldPhotoIndex]
     const newPhoto = nextPhotoBacklog.pop()
-    console.log("oldPhoto:", oldPhoto)
-    console.log("newPhoto:", newPhoto)
 
     // Insert new photo into old photo index
     nextPhotosToShow[oldPhotoIndex] = newPhoto;
@@ -90,9 +86,7 @@ const PhotoGrid = () => {
   }
 
   const handlePhotosToShow = () => {
-    console.log('handlePhotosToShow')
-    const width = window.innerWidth;
-    const numToShow = calcNumPhotosToShow(width);
+    const numToShow = calcNumPhotosToShow(innerWidth);
     const photos = photoBacklog.slice(0, numToShow)
     setPhotosToShow(photos)
   }
