@@ -25,7 +25,7 @@ const shuffle = (array) => {
   return array;
 }
 
-let images = importAll(require.context('./static/photography', false, /\.(png|jpe?g|svg)$/));
+let images = importAll(require.context('../../static/photography', false, /\.(png|jpe?g|svg)$/));
 shuffle(images)
 
 //Disable scrolling on PhotoGrid

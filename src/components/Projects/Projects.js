@@ -11,7 +11,7 @@ export default class Projects extends React.Component {
         description: "Simple snake clone",
         github: "https://github.com/abcmer/snake",
         link: "https://snake.abcmer.com/",
-        imgSrc: require("./static/project-thumbnails/snake.png"),
+        imgSrc: require("../../static/project-thumbnails/snake.png"),
         imgAlt: "snake game"
       },
       {
@@ -19,7 +19,7 @@ export default class Projects extends React.Component {
         description: "All the fortune cookies you desire, without getting full",
         github: "https://github.com/abcmer/fortunes",
         link: "https://www.fortunes.abcmer.com/",
-        imgSrc: require("./static/project-thumbnails/fortunes.png"),
+        imgSrc: require("../../static/project-thumbnails/fortunes.png"),
         imgAlt: "fortunes app"
       },
       {
@@ -27,7 +27,7 @@ export default class Projects extends React.Component {
         description: "All work and no play makes Adam a dull boy",
         github: "https://github.com/abcmer/allwork-noplay",
         link: "https://www.allwork-noplay.abcmer.com/?name=Adam&gender=boy",
-        imgSrc: require("./static/project-thumbnails/allwork-noplay.png"),
+        imgSrc: require("../../static/project-thumbnails/allwork-noplay.png"),
         imgAlt: "all work, no play app"
       },
     ];
