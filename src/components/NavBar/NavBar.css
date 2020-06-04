@@ -56,6 +56,12 @@ li.nav-item a {
   li.nav-item a {
     display: block;
   }
+  .nav-container {
+    background-color: #0b233f;
+    z-index: 1;
+    box-shadow: 2px 2px black;
+    padding-left: 15px;
+  }  
 }
 
 li.nav-item a.active {
