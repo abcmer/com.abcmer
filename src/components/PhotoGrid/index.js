@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './PhotoGrid.css'
 
 function importAll(r) {
+  console.log('importAll...')
   return r.keys().map(r);
 }
 
