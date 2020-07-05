@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './PhotoGrid.css'
 
-const files = require.context('../../static/photography')
-console.log('files', files)
-
-
 function importAll(r) {
   return r.keys().map(r);
 }
