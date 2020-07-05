@@ -30,6 +30,13 @@ export default class Projects extends React.Component {
         imgSrc: require("../../static/project-thumbnails/allwork-noplay.png"),
         imgAlt: "all work, no play app"
       },
+      {
+        name: "Phish Stats",
+        description: "Python project for generating Phish Stats",
+        github: "https://github.com/abcmer/phish-stats",
+        imgSrc: require("../../static/project-thumbnails/phish-stats.png"),
+        imgAlt: "phish stats line graph"
+      },
     ];
     return (
       <Container id="projects" className="projects fade-in">
