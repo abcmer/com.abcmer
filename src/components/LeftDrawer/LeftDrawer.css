@@ -1,0 +1,11 @@
+.MuiDrawer-paperAnchorLeft {
+  left: 0;
+  right: auto;
+  margin-top: 64px;
+}
+
+@media (max-width: 600px) {
+  .MuiDrawer-paperAnchorLeft {
+    margin-top: 56px;
+  }  
+}

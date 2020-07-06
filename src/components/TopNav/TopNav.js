@@ -7,10 +7,14 @@ import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
+import LeftDrawer from '../LeftDrawer/LeftDrawer'
+
+import './TopNav.css'
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: '#0B233F'
+    backgroundColor: '#0B233F',
+    paddingLeft: '0px'
   },
   root: {
     flexGrow: 1,
@@ -60,14 +64,7 @@ export default function TopNav() {
     <div className={classes.root}>
       <AppBar position="static" className={classes.appBar}>
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-          >
-            <MenuIcon />
-          </IconButton>
+          <LeftDrawer/>            
           <Typography className={classes.title} variant="h6" noWrap>
             Adam Siemer
           </Typography>
