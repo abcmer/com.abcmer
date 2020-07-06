@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "../NavBar";
+import TopNav from "../TopNav/TopNav"
+import LeftDrawer from '../LeftDrawer/LeftDrawer'
 import PhotoGrid from "../PhotoGrid";
 import Portfolio from "../Projects";
 
@@ -33,7 +35,7 @@ export default class App extends Component {
       <div>
         <Router>
           <div>
-            <NavBar />
+            <TopNav />            
             <div className="content">
               <Switch>
                 <Route exact path="/">
