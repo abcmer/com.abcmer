@@ -14,6 +14,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton';
 import DescriptionIcon from '@material-ui/icons/Description';
 import CodeIcon from '@material-ui/icons/Code';
+import HomeIcon from '@material-ui/icons/Home';
 
 import './LeftDrawer.css'
 
@@ -56,14 +57,24 @@ export default function LeftDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-      <ListItem button key={"projects"}>
+        <a href='/'>
+        <ListItem button key={"home"}>
+          <ListItemIcon><HomeIcon/></ListItemIcon>
+          <ListItemText primary={"Home"} />
+        </ListItem>  
+        </a>          
+        <a href='/projects'>
+        <ListItem button key={"projects"}>
           <ListItemIcon><CodeIcon/></ListItemIcon>
           <ListItemText primary={"Projects"} />
-        </ListItem>           
+        </ListItem>  
+        </a>  
+        <a href='https://drive.google.com/file/d/0B-R24Rv9imxkd3dnc3BYV1ZjeW8/view'>       
         <ListItem button key={"resume"}>
           <ListItemIcon><DescriptionIcon/></ListItemIcon>
           <ListItemText primary={"Resume"} />
-        </ListItem>     
+        </ListItem>   
+        </a>  
       </List>
       </div>
   );
