@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+<<<<<<< HEAD
 import NavBar from "../NavBar";
 import TopNav from "../TopNav/TopNav"
 import LeftDrawer from '../LeftDrawer/LeftDrawer'
+=======
+import TopNav from "../TopNav/TopNav"
+>>>>>>> origin/master
 import PhotoGrid from "../PhotoGrid";
 import Portfolio from "../Projects";
 
