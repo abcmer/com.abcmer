@@ -34,6 +34,7 @@ export default class Projects extends React.Component {
         name: "Phish Stats",
         description: "Python project for generating Phish Stats",
         github: "https://github.com/abcmer/phish-stats",
+        link: "https://github.com/abcmer/phish-stats",
         imgSrc: require("../../static/project-thumbnails/phish-stats.png"),
         imgAlt: "phish stats line graph"
       },
