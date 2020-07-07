@@ -53,6 +53,9 @@ export default function LeftDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
+        <ListItem>          
+          <ListItemText primary={"Adam Siemer"} />
+        </ListItem>   
         <a href='/'>
         <ListItem button key={"home"}>
           <ListItemIcon><HomeIcon/></ListItemIcon>
