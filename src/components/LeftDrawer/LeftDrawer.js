@@ -11,10 +11,13 @@ import MenuIcon from '@material-ui/icons/Menu';
 import DescriptionIcon from '@material-ui/icons/Description';
 import CodeIcon from '@material-ui/icons/Code';
 import HomeIcon from '@material-ui/icons/Home';
+import IconButton from '@material-ui/core/IconButton';
+import Divider from '@material-ui/core/Divider';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 
 import './LeftDrawer.css'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   list: {
     width: 250,
   },
@@ -23,11 +26,19 @@ const useStyles = makeStyles({
   },
   menuButton: {
     color: 'white'
-  }
-});
+  },
+  toolbarIcon: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    padding: '0 8px',
+    ...theme.mixins.toolbar,
+  },  
+}));
 
-export default function LeftDrawer() {
+export default function LeftDrawer(props) {
   const classes = useStyles();
+  const {handleDrawerOpen} = props;
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -39,7 +50,7 @@ export default function LeftDrawer() {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
     }
-
+    handleDrawerOpen()
     setState({ ...state, [anchor]: open });
   };
 
@@ -52,10 +63,13 @@ export default function LeftDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
-        <ListItem>          
-          <ListItemText primary={"Adam Siemer"} />
-        </ListItem>   
+      <div className={classes.toolbarIcon}>
+        <IconButton>
+          <ChevronLeftIcon />
+        </IconButton>
+      </div>
+      <Divider />      
+      <List>   
         <a href='/'>
         <ListItem button key={"home"}>
           <ListItemIcon><HomeIcon/></ListItemIcon>

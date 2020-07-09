@@ -1,16 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import LeftDrawer from '../LeftDrawer/LeftDrawer'
+import clsx from 'clsx';
 
 import './TopNav.css'
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor: '#0B233F',
-    paddingLeft: '0px'
+    paddingLeft: '0px',
+    marginLeft: '0px'
+  },
+  appBarShift: {
+    width: `calc(100% - 180px)`,    
+    marginLeft: `180px`,
+    transition: theme.transitions.create(['width', 'margin'], {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.enteringScreen,
+    }),    
   },
   root: {
     flexGrow: 1,
@@ -53,14 +63,19 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function TopNav() {
+export default function TopNav(props) {
   const classes = useStyles();
+  const [drawerOpen, setDrawerOpen] = useState(false)
+
+  const handleDrawerOpen = () => {
+    setDrawerOpen(!drawerOpen)
+  }  
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" className={classes.appBar}>
+      <AppBar position="static" className={clsx(classes.appBar, drawerOpen && classes.appBarShift)}>
         <Toolbar>
-          <LeftDrawer/>            
+          <LeftDrawer handleDrawerOpen={handleDrawerOpen}/>            
           <Typography className={classes.title} variant="h6" noWrap>
             Adam Siemer
           </Typography>

@@ -13,6 +13,7 @@ export default class App extends Component {
       innerHeight: 0,
       innerWidth: 0,
       initialLoad: true,
+      drawerOpen: false
     };
   }
 
