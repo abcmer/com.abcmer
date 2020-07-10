@@ -2,10 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import './PhotoGrid.css'
 
-function importAll(r) {
-  return r.keys().map(r);
-}
-
 const shuffle = (array) => {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -32,7 +28,7 @@ const PhotoGrid = () => {
   const photoNames = require('./photoNames.json')
   const [innerWidth, setInnerWidth ] = useState(window.innerWidth);
   const [photosToShow, setPhotosToShow] = useState([]);
-  const [photoBacklog, setPhotoBacklog] = useState(photoNames);
+  const [photoBacklog, setPhotoBacklog] = useState(shuffle(photoNames));
 
   useEffect(() => {
     handlePhotosToShow();
