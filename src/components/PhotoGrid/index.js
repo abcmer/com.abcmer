@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import './PhotoGrid.css'
 
@@ -28,10 +29,10 @@ const shuffle = (array) => {
 document.body.style.overflow = "hidden"
 
 const PhotoGrid = () => {
-
+  const photoNames = require('./photoNames.json')
   const [innerWidth, setInnerWidth ] = useState(window.innerWidth);
   const [photosToShow, setPhotosToShow] = useState([]);
-  const [photoBacklog, setPhotoBacklog] = useState(shuffle(importAll(require.context('../../static/photography', false, /\.(png|jpe?g|svg)$/))));
+  const [photoBacklog, setPhotoBacklog] = useState(photoNames);
 
   useEffect(() => {
     handlePhotosToShow();
@@ -91,7 +92,7 @@ const PhotoGrid = () => {
       {photosToShow.map((p,i) => {
         return (
           <div className="grid-item" key={i} onMouseOut={() => handlePhotoChange(i)}>
-            <img  src={p} alt="alt text" />
+            <img  src={require(`../../static/photography/${p}`)} alt="alt text" />
           </div>)
       })}
     </div>
