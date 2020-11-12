@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import TopNav from "../TopNav/TopNav"
 import PhotoGrid from "../PhotoGrid";
 import Portfolio from "../Projects";
+import Resume from '../Resume/Resume'
 
 import "./App.css";
 
@@ -42,6 +43,9 @@ export default class App extends Component {
                 </Route>
                 <Route exact path="/projects">
                   <Portfolio />
+                </Route>
+                <Route exact path="/resume">
+                  <Resume/>
                 </Route>
               </Switch>
             </div>
