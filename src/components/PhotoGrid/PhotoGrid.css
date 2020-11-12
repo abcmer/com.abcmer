@@ -1,5 +1,6 @@
 .grid-container {
   display: grid;
+  padding-top: 55px;
   grid-template-columns: 16.666666666% 16.666666666% 16.666666666% 16.666666666% 16.666666666% 16.666666666%;
 }
 .grid-item {

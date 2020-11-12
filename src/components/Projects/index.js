@@ -7,21 +7,13 @@ export default class Projects extends React.Component {
   render() {
     const projects = [
       {
-        name: "Snake",
-        description: "Simple snake clone",
-        github: "https://github.com/abcmer/snake",
-        link: "https://snake.abcmer.com/",
-        imgSrc: require("../../static/project-thumbnails/snake.png"),
-        imgAlt: "snake game"
-      },
-      {
-        name: "Fortunes",
-        description: "All the fortune cookies you desire, without getting full",
-        github: "https://github.com/abcmer/fortunes",
-        link: "https://www.fortunes.abcmer.com/",
-        imgSrc: require("../../static/project-thumbnails/fortunes.png"),
-        imgAlt: "fortunes app"
-      },
+        name: "RCC",
+        description: "Gotta watch em all",
+        github: "https://github.com/abcmer/RCC",
+        link: "https://github.com/abcmer/RCC",
+        imgSrc: require("../../static/project-thumbnails/red-carpet-challenge.png"),
+        imgAlt: "red carpet challenge app"
+      },      
       {
         name: "All Work, No Play",
         description: "All work and no play makes Adam a dull boy",
@@ -38,6 +30,22 @@ export default class Projects extends React.Component {
         imgSrc: require("../../static/project-thumbnails/phish-stats.png"),
         imgAlt: "phish stats line graph"
       },
+      {
+        name: "Snake",
+        description: "Simple snake clone",
+        github: "https://github.com/abcmer/snake",
+        link: "https://snake.abcmer.com/",
+        imgSrc: require("../../static/project-thumbnails/snake.png"),
+        imgAlt: "snake game"
+      },      
+      {
+        name: "Fortunes",
+        description: "All the fortune cookies you desire, without getting full",
+        github: "https://github.com/abcmer/fortunes",
+        link: "https://www.fortunes.abcmer.com/",
+        imgSrc: require("../../static/project-thumbnails/fortunes.png"),
+        imgAlt: "fortunes app"
+      }, 
     ];
     return (
       <Container id="projects" className="projects fade-in">

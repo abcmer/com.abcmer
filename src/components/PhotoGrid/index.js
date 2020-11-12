@@ -22,7 +22,7 @@ const shuffle = (array) => {
 }
 
 //Disable scrolling on PhotoGrid
-document.body.style.overflow = "hidden"
+// document.body.style.overflow = "hidden"
 
 const PhotoGrid = () => {
   const photoNames = require('./photoNames.json')

@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor: '#0B233F',
     paddingLeft: '0px',
-    marginLeft: '0px'
+    marginLeft: '0px',
+    // position: 'fixed'
   },
   appBarShift: {
     width: `calc(100% - 180px)`,    
@@ -73,7 +74,7 @@ export default function TopNav(props) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" className={clsx(classes.appBar, drawerOpen && classes.appBarShift)}>
+      <AppBar position="fixed" className={clsx(classes.appBar, drawerOpen && classes.appBarShift)}>
         <Toolbar>
           <LeftDrawer handleDrawerOpen={handleDrawerOpen}/>            
           <Typography className={classes.title} variant="h6" noWrap>
