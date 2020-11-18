@@ -28,6 +28,10 @@
   margin-top: 1rem;
 }
 
+.project-title {
+  font-size: 1.5rem;
+}
+
 .project:hover {
   border: 2px solid white;
   border-radius: 10px;

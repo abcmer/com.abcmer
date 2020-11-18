@@ -7,15 +7,23 @@ export default class Projects extends React.Component {
   render() {
     const projects = [
       {
-        name: "RCC",
-        description: "Gotta watch em all",
-        github: "https://github.com/abcmer/RCC",
-        link: "https://github.com/abcmer/RCC",
-        imgSrc: require("../../static/project-thumbnails/red-carpet-challenge.png"),
-        imgAlt: "red carpet challenge app"
-      },      
+        name: "nba-history-d3",
+        description: "D3 visualization of NBA History",
+        github: "https://github.com/abcmer/nba-history-d3",
+        link: "https://nba-history.abcmer.com",
+        imgSrc: require("../../static/project-thumbnails/nba-history.png"),
+        imgAlt: "nba history d3 app"
+      }, 
       {
-        name: "All Work, No Play",
+        name: "snake",
+        description: "Simple snake game",
+        github: "https://github.com/abcmer/snake",
+        link: "https://snake.abcmer.com/",
+        imgSrc: require("../../static/project-thumbnails/snake.png"),
+        imgAlt: "snake game"
+      },  
+      {
+        name: "allwork-noplay",
         description: "All work and no play makes Adam a dull boy",
         github: "https://github.com/abcmer/allwork-noplay",
         link: "https://www.allwork-noplay.abcmer.com/?name=Adam&gender=boy",
@@ -23,23 +31,23 @@ export default class Projects extends React.Component {
         imgAlt: "all work, no play app"
       },
       {
-        name: "Phish Stats",
+        name: "rcc",
+        description: "Gotta watch em all",
+        github: "https://github.com/abcmer/RCC",
+        link: "https://github.com/abcmer/RCC",
+        imgSrc: require("../../static/project-thumbnails/red-carpet-challenge.png"),
+        imgAlt: "red carpet challenge app"
+      },      
+      {
+        name: "phish-stats",
         description: "Python project for generating Phish Stats",
         github: "https://github.com/abcmer/phish-stats",
         link: "https://github.com/abcmer/phish-stats",
         imgSrc: require("../../static/project-thumbnails/phish-stats.png"),
         imgAlt: "phish stats line graph"
-      },
-      {
-        name: "Snake",
-        description: "Simple snake clone",
-        github: "https://github.com/abcmer/snake",
-        link: "https://snake.abcmer.com/",
-        imgSrc: require("../../static/project-thumbnails/snake.png"),
-        imgAlt: "snake game"
       },      
       {
-        name: "Fortunes",
+        name: "fortunes",
         description: "All the fortune cookies you desire, without getting full",
         github: "https://github.com/abcmer/fortunes",
         link: "https://www.fortunes.abcmer.com/",
@@ -55,7 +63,7 @@ export default class Projects extends React.Component {
               <Col className="project" sm={{ size: 3, offset: 1 }}>
                 <a href={project.link}>
                   <div>
-                    <h3>{project.name}</h3>
+                    <h3 className='project-title'>{project.name}</h3>
                     <img src={project.imgSrc} alt={project.imgAlt} />
                   </div>
                   <Row>
