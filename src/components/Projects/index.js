@@ -26,7 +26,7 @@ export default class Projects extends React.Component {
         name: "allwork-noplay",
         description: "All work and no play makes Adam a dull boy",
         github: "https://github.com/abcmer/allwork-noplay",
-        link: "https://www.allwork-noplay.abcmer.com/?name=Adam&gender=boy",
+        link: "https://allwork-noplay.abcmer.com/?name=Adam&gender=boy",
         imgSrc: require("../../static/project-thumbnails/allwork-noplay.png"),
         imgAlt: "all work, no play app"
       },
@@ -50,7 +50,7 @@ export default class Projects extends React.Component {
         name: "fortunes",
         description: "All the fortune cookies you desire, without getting full",
         github: "https://github.com/abcmer/fortunes",
-        link: "https://www.fortunes.abcmer.com/",
+        link: "https://fortunes.abcmer.com/",
         imgSrc: require("../../static/project-thumbnails/fortunes.png"),
         imgAlt: "fortunes app"
       }, 
