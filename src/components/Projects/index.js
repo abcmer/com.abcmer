@@ -31,10 +31,10 @@ export default class Projects extends React.Component {
         imgAlt: "all work, no play app"
       },
       {
-        name: "rcc",
-        description: "Gotta watch em all",
+        name: "Red Carpet Challenge",
+        description: "Film watching social media site on Kubernetes",
         github: "https://github.com/abcmer/RCC",
-        link: "https://github.com/abcmer/RCC",
+        link: "https://rcc.abcmer.com",
         imgSrc: require("../../static/project-thumbnails/red-carpet-challenge.png"),
         imgAlt: "red carpet challenge app"
       },      
