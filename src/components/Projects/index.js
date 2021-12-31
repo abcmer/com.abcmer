@@ -34,7 +34,7 @@ export default class Projects extends React.Component {
         name: "Red Carpet Challenge",
         description: "Film watching social media site on Kubernetes",
         github: "https://github.com/abcmer/RCC",
-        link: "https://rcc.abcmer.com",
+        link: "https://github.com/abcmer/RCC",
         imgSrc: require("../../static/project-thumbnails/red-carpet-challenge.png"),
         imgAlt: "red carpet challenge app"
       },      
