@@ -88,7 +88,7 @@ const PhotoGrid = () => {
       {photosToShow.map((p,i) => {
         return (
           <div className="grid-item" key={i} onMouseOut={() => handlePhotoChange(i)}>
-            <img  src={require(`../../static/photography/${p}`)} alt="alt text" />
+            <img  src={p} alt="alt text" />
           </div>)
       })}
     </div>
