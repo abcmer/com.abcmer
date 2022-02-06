@@ -82,7 +82,7 @@ export default function LeftDrawer(props) {
           <ListItemText primary={"Projects"} />
         </ListItem>  
         </a>  
-        <a href='https://drive.google.com/file/d/0B-R24Rv9imxkd3dnc3BYV1ZjeW8/view'>       
+        <a href='https://s3.amazonaws.com/com.abcmer.media/resume/SiemerAdam_Resume.pdf'>       
         <ListItem button key={"resume"}>
           <ListItemIcon><DescriptionIcon/></ListItemIcon>
           <ListItemText primary={"Resume"} />
