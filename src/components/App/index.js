@@ -48,13 +48,13 @@ export default class App extends Component {
                   <ProjectIFrame url="https://snake.abcmer.com" project="snake"/>
                 </Route>
                 <Route exact path="/projects/fortunes">
-                  <ProjectIFrame url="https://fortunes.abcmer.com" project="snake"/>
+                  <ProjectIFrame url="https://fortunes.abcmer.com" project="fortunes"/>
                 </Route>
                 <Route exact path="/projects/allwork-noplay">
-                  <ProjectIFrame url="https://allwork-noplay.abcmer.com"/>
+                  <ProjectIFrame url="https://allwork-noplay.abcmer.com" project="allwork-noplay"/>
                 </Route>
                 <Route exact path="/projects/nba-history">
-                  <ProjectIFrame url="https://nba-history.abcmer.com"/>
+                  <ProjectIFrame url="https://nba-history.abcmer.com" project="nba-history"/>
                 </Route>                                                
               </Switch>
             </div>

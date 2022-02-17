@@ -12,7 +12,7 @@ const ProjectIFrame = (props) => {
       <iframe 
         className={className}
         src={url} 
-        height={window.innerHeight * .8} >
+        height={window.innerHeight} >
         </iframe>
       </div>
   )
