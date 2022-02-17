@@ -3,14 +3,14 @@ import { Container, Row, Col } from "reactstrap";
 import "./Projects.css";
 import "bootstrap/dist/css/bootstrap.css";
 
-export default class Projects extends React.Component {
+export default class ProjectsList extends React.Component {
   render() {
     const projects = [
       {
         name: "nba-history-d3",
         description: "D3 visualization of NBA History",
         github: "https://github.com/abcmer/nba-history-d3",
-        link: "https://nba-history.abcmer.com",
+        link: "/projects/nba-history",
         imgSrc: require("../../static/project-thumbnails/nba-history.png"),
         imgAlt: "nba history d3 app"
       }, 
@@ -18,7 +18,7 @@ export default class Projects extends React.Component {
         name: "snake",
         description: "Simple snake game",
         github: "https://github.com/abcmer/snake",
-        link: "https://snake.abcmer.com/",
+        link: "/projects/snake",
         imgSrc: require("../../static/project-thumbnails/snake.png"),
         imgAlt: "snake game"
       },  
@@ -26,7 +26,7 @@ export default class Projects extends React.Component {
         name: "allwork-noplay",
         description: "All work and no play makes Adam a dull boy",
         github: "https://github.com/abcmer/allwork-noplay",
-        link: "https://allwork-noplay.abcmer.com/?name=Adam&gender=boy",
+        link: "/projects/allwork-noplay?name=Adam&gender=boy",
         imgSrc: require("../../static/project-thumbnails/allwork-noplay.png"),
         imgAlt: "all work, no play app"
       },
@@ -50,7 +50,7 @@ export default class Projects extends React.Component {
         name: "fortunes",
         description: "All the fortune cookies you desire, without getting full",
         github: "https://github.com/abcmer/fortunes",
-        link: "https://fortunes.abcmer.com/",
+        link: "/projects/fortunes",
         imgSrc: require("../../static/project-thumbnails/fortunes.png"),
         imgAlt: "fortunes app"
       }, 

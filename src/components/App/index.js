@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import TopNav from "../TopNav/TopNav"
 import PhotoGrid from "../PhotoGrid";
-import Portfolio from "../Projects";
+import Portfolio from "../Projects/ProjectsList";
+import {ProjectIFrame} from "../Projects/ProjectIFrame";
 
 import "./App.css";
 
@@ -43,6 +44,18 @@ export default class App extends Component {
                 <Route exact path="/projects">
                   <Portfolio />
                 </Route>
+                <Route exact path="/projects/snake">
+                  <ProjectIFrame url="https://snake.abcmer.com" project="snake"/>
+                </Route>
+                <Route exact path="/projects/fortunes">
+                  <ProjectIFrame url="https://fortunes.abcmer.com" project="snake"/>
+                </Route>
+                <Route exact path="/projects/allwork-noplay">
+                  <ProjectIFrame url="https://allwork-noplay.abcmer.com"/>
+                </Route>
+                <Route exact path="/projects/nba-history">
+                  <ProjectIFrame url="https://nba-history.abcmer.com"/>
+                </Route>                                                
               </Switch>
             </div>
           </div>

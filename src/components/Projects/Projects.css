@@ -37,3 +37,24 @@
   border-radius: 10px;
   border-width: 5px;
 }
+
+.project-iframe-snake {
+  margin-top: 64px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: black;
+}
+
+.project-iframe-fortunes {
+  margin-top: 64px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-width: 0px;
+}
+
+a .back-button {
+  margin-top: 64px;
+  height: 50px;
+}
