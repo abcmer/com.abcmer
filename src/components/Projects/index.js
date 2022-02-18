@@ -60,7 +60,7 @@ export default class Projects extends React.Component {
         <Row>
           {projects.map(project => {
             return (
-              <Col className="project" sm={{ size: 3, offset: 1 }}>
+              <Col className="project" md={{ size: 5, offset: 1 }}>
                 <a href={project.link}>
                   <div>
                     <h3 className='project-title'>{project.name}</h3>
