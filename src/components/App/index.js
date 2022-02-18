@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import TopNav from "../TopNav/TopNav"
 import PhotoGrid from "../PhotoGrid";
 import Portfolio from "../Projects";
+import { SectionDivider  } from "../SectionDivider/SectionDivider";
 
 import "./App.css";
 
@@ -38,7 +39,11 @@ export default class App extends Component {
             <div className="content">
               <Switch>
                 <Route exact path="/">
-                  <PhotoGrid />
+                  <div>
+                    <PhotoGrid /> 
+                    <Portfolio />
+                    <SectionDivider height='10'/>
+                  </div>
                 </Route>
                 <Route exact path="/projects">
                   <Portfolio />

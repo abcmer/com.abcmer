@@ -76,7 +76,7 @@ export default function LeftDrawer(props) {
           <ListItemText primary={"Home"} />
         </ListItem>  
         </a>          
-        <a href='/projects'>
+        <a href='/#projects'>
         <ListItem button key={"projects"}>
           <ListItemIcon><CodeIcon/></ListItemIcon>
           <ListItemText primary={"Projects"} />

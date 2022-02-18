@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
+import { SectionDivider } from "../SectionDivider/SectionDivider";
 import "./Projects.css";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -56,29 +57,33 @@ export default class Projects extends React.Component {
       }, 
     ];
     return (
-      <Container id="projects" className="projects fade-in">
-        <Row>
-          {projects.map(project => {
-            return (
-              <Col className="project" sm={{ size: 3, offset: 1 }}>
-                <a href={project.link}>
-                  <div>
-                    <h3 className='project-title'>{project.name}</h3>
-                    <img src={project.imgSrc} alt={project.imgAlt} />
-                  </div>
-                  <Row>
-                    <Col />
-                    <Col>
-                      <a href={project.github}>Github</a>
-                    </Col>
-                    <Col />
-                  </Row>
-                </a>
-              </Col>
-            );
-          })}
-        </Row>
-      </Container >
+      <div id="projects">
+        <SectionDivider height='5'/>
+        <h3>Projects</h3>
+        <Container className="projects fade-in">
+          <Row>
+            {projects.map(project => {
+              return (
+                <Col className="project" sm={{ size:4, offset: 1 }}>
+                  <a href={project.link}>
+                    <div>
+                      <h3 className='project-title'>{project.name}</h3>
+                      <img src={project.imgSrc} alt={project.imgAlt} />
+                    </div>
+                    <Row>
+                      <Col />
+                      <Col>
+                        <a href={project.github}>Github</a>
+                      </Col>
+                      <Col />
+                    </Row>
+                  </a>
+                </Col>
+              );
+            })}
+          </Row>
+        </Container >
+      </div>
     );
   }
 }
