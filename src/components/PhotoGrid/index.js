@@ -29,6 +29,7 @@ const PhotoGrid = () => {
   const [innerWidth, setInnerWidth ] = useState(window.innerWidth);
   const [photosToShow, setPhotosToShow] = useState([]);
   const [photoBacklog, setPhotoBacklog] = useState(shuffle(photoNames));
+  const [photoIndex, setPhotoIndex] = useState(0);
 
   useEffect(() => {
     handlePhotosToShow();
@@ -38,6 +39,21 @@ const PhotoGrid = () => {
     handleResize()
     window.addEventListener("resize", handleResize);
   }, [])
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPhotoIndex(getNextPhotoToChange)
+      handlePhotoChange(photoIndex)
+    }, 3000);
+    return () => {
+      clearInterval(interval);
+    }
+  }, [photoIndex, photosToShow]);
+
+  const getNextPhotoToChange = () => {
+    const photosToShowCount = photosToShow.length;
+    return (photoIndex + 5) % photosToShowCount
+  }
 
   const handleResize = () => {
     setInnerWidth(window.innerWidth)
@@ -86,9 +102,9 @@ const PhotoGrid = () => {
   return (
     <div className="grid-container fade-in">
       {photosToShow.map((p,i) => {
-        return (
-          <div className="grid-item" key={i} onMouseOut={() => handlePhotoChange(i)}>
-            <img  src={p} alt="alt text" />
+        return (          
+          <div className="grid-item" key={i}>
+            <img  src={p} onClick={() => handlePhotoChange(i)} alt="alt text" />
           </div>)
       })}
     </div>
