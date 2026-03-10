@@ -4,16 +4,85 @@ import AnimationInit from "@/components/AnimationInit";
 const skillCategories = [
   {
     label: "GenAI",
-    skills: ["OpenAI", "Claude Code", "Cursor", "Co-Pilot", "RAG", "LangChain", "Bedrock"],
+    skills: [
+      { name: "OpenAI", logo: "/static/logos/skills/openai.png" },
+      { name: "Claude Code", logo: "/static/logos/skills/anthropic.png" },
+      { name: "Cursor", logo: "/static/logos/skills/cursor.png" },
+      { name: "Co-Pilot", logo: "/static/logos/skills/copilot.png" },
+      { name: "RAG" },
+      { name: "LangChain", logo: "/static/logos/skills/langchain.png" },
+      { name: "Bedrock", logo: "/static/logos/skills/aws-bedrock.png" },
+    ],
   },
-  { label: "Languages", skills: ["Python", "JavaScript", "Java", "Go"] },
-  { label: "Cloud", skills: ["AWS", "Azure", "GCP", "Terraform"] },
-  { label: "Frontend", skills: ["ReactJS", "NextJS", "D3.js"] },
-  { label: "Backend", skills: ["REST", "GraphQL", "Microservices"] },
-  { label: "CI/CD", skills: ["GitHub", "GitLab", "Jenkins", "Azure Pipelines"] },
-  { label: "Containers", skills: ["Kubernetes", "Docker", "ECS"] },
-  { label: "Database", skills: ["Postgres", "MongoDB", "MySQL", "Redis"] },
-  { label: "Data", skills: ["Pandas", "NumPy", "SQL", "Spark"] },
+  {
+    label: "Languages",
+    skills: [
+      { name: "Python", logo: "/static/logos/python.png" },
+      { name: "JavaScript", logo: "/static/logos/javascript.jpeg" },
+      { name: "Java" },
+      { name: "Go" },
+    ],
+  },
+  {
+    label: "Cloud",
+    skills: [
+      { name: "AWS", logo: "/static/logos/skills/aws.png" },
+      { name: "Azure", logo: "/static/logos/skills/azure.png" },
+      { name: "GCP" },
+      { name: "Terraform" },
+    ],
+  },
+  {
+    label: "Frontend",
+    skills: [
+      { name: "ReactJS", logo: "/static/logos/react.png" },
+      { name: "NextJS" },
+      { name: "D3.js", logo: "/static/logos/d3Js.jpeg" },
+    ],
+  },
+  {
+    label: "Backend",
+    skills: [
+      { name: "REST" },
+      { name: "GraphQL" },
+      { name: "Microservices" },
+    ],
+  },
+  {
+    label: "CI/CD",
+    skills: [
+      { name: "GitHub", logo: "/static/logos/github.png" },
+      { name: "GitLab" },
+      { name: "Jenkins" },
+      { name: "Azure Pipelines" },
+    ],
+  },
+  {
+    label: "Containers",
+    skills: [
+      { name: "Kubernetes" },
+      { name: "Docker", logo: "/static/logos/docker.png" },
+      { name: "ECS" },
+    ],
+  },
+  {
+    label: "Database",
+    skills: [
+      { name: "Postgres", logo: "/static/logos/postgres.png" },
+      { name: "MongoDB", logo: "/static/logos/mongo.png" },
+      { name: "MySQL", logo: "/static/logos/mysql.png" },
+      { name: "Redis" },
+    ],
+  },
+  {
+    label: "Data",
+    skills: [
+      { name: "Pandas", logo: "/static/logos/pandas.png" },
+      { name: "NumPy" },
+      { name: "SQL" },
+      { name: "Spark" },
+    ],
+  },
 ];
 
 const certifications = [
@@ -110,8 +179,20 @@ export default function Home() {
                 <div className="skill-cat-label">{cat.label}</div>
                 <div className="skill-tags">
                   {cat.skills.map((s) => (
-                    <span className="skill-tag" key={s}>
-                      {s}
+                    <span
+                      className="skill-tag"
+                      key={s.name}
+                      data-tooltip={s.name}
+                      tabIndex={0}
+                    >
+                      {s.logo ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img src={s.logo} alt={s.name} className="skill-tag-logo" />
+                      ) : (
+                        <svg className="skill-tag-placeholder" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                          <text x="20" y="18" textAnchor="middle" fontFamily="monospace" fontSize="14" fill="currentColor">&lt;/&gt;</text>
+                        </svg>
+                      )}
                     </span>
                   ))}
                 </div>
