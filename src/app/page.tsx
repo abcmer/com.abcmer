@@ -61,14 +61,21 @@ export default function Home() {
         <div className="container">
           <div className="about-copy" data-reveal>
             <p>
-              I build at the rare intersection of technical depth and business fluency —
-              two business degrees, twelve years of engineering — leading AI teams,
-              shipping at scale, and turning emerging technology into real, lasting impact.
+              I&apos;m an AI product engineer with a business background of both finance and information
+              systems degrees from Indiana University&apos;s Kelley School of Business, followed
+              by twelve years building software at PwC, Capital One, and McKinsey.
             </p>
             <p>
-              From GenAI product development at McKinsey to cloud resiliency at Capital One
-              and emerging tech prototypes at PwC, I&apos;ve worked at the intersection
-              of software engineering and strategic impact.
+              What makes my background different is the range. I&apos;ve led engineering
+              teams, but I&apos;ve also sat in user interviews, collaborated with designers, and
+              presented to executives. I understand the business context behind the code I write,
+              making me a more effective engineer and technical leader.
+            </p>
+            <p>
+              Outside of work I&apos;m a husband and dad of three. 
+              I flex my competive drive through basketball and running, 
+              and my creative side playing keyboard/piano with local musicians 
+              and attending open mic nights around Oak Park, IL
             </p>
           </div>
         </div>

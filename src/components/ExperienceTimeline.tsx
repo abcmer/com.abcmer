@@ -1,6 +1,7 @@
 const EXPERIENCES = [
   {
     company: 'McKinsey & Company',
+    logo: '/static/logos/mckinsey-logo.svg',
     role: 'Senior Engineer I (Jul 2022) → Senior Engineer II (Jan 2025)',
     date: 'Jul 2022 — Present',
     bullets: [
@@ -16,6 +17,7 @@ const EXPERIENCES = [
   },
   {
     company: 'Capital One',
+    logo: '/static/logos/capital-one-logo.svg',
     role: 'Senior Software Engineer',
     date: 'Oct 2021 — Jul 2022',
     bullets: [
@@ -27,6 +29,7 @@ const EXPERIENCES = [
   },
   {
     company: 'PricewaterhouseCoopers',
+    logo: '/static/logos/pwc-logo.svg',
     role: 'Data Analyst (Jul 2013) → Software Engineer (Jul 2016) → Senior Software Engineer (Jul 2019)',
     date: 'Jul 2013 — Oct 2021',
     bullets: [
@@ -57,7 +60,14 @@ export default function ExperienceTimeline() {
           <div className="timeline-header">
             <div className="timeline-meta">
               <div className="timeline-meta-left">
-                <div className="timeline-company">{exp.company}</div>
+                <div className="timeline-company">
+                  {exp.logo ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={exp.logo} alt={exp.company} style={{ height: "1.8em", display: "inline-block", verticalAlign: "middle" }} />
+                  ) : (
+                    exp.company
+                  )}
+                </div>
                 <div className="timeline-role">{exp.role}</div>
               </div>
               <div className="timeline-meta-right">
