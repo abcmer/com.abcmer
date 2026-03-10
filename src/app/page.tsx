@@ -17,12 +17,12 @@ const skillCategories = [
 ];
 
 const certifications = [
-  { name: "Azure Fundamentals", year: "2023", icon: "☁" },
-  { name: "AWS Developer Associate", year: "2022", icon: "⚡" },
-  { name: "AWS Solutions Architect Associate", year: "2022", icon: "⚡" },
-  { name: "HashiCorp Terraform Associate", year: "2022", icon: "⬡" },
-  { name: "FinOps Certified Practitioner", year: "2022", icon: "◈" },
-  { name: "Kubernetes Developer", year: "2021", icon: "⎈" },
+  { name: "Azure Fundamentals", year: "2023", icon: "☁", imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1920px-Microsoft_Azure.svg.png" },
+  { name: "AWS Developer Associate", year: "2022", icon: "⚡", imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1920px-Amazon_Web_Services_Logo.svg.png" },
+  { name: "AWS Solutions Architect Associate", year: "2022", icon: "⚡", imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1920px-Amazon_Web_Services_Logo.svg.png" },
+  { name: "HashiCorp Terraform Associate", year: "2022", icon: "⬡", imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Terraform_Logo.svg/1920px-Terraform_Logo.svg.png" },
+  { name: "FinOps Certified Practitioner", year: "2022", icon: "◈", imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxNGIRZjuX-Wc-IIui2msy2fVBXgpX0n-U4A&s" },
+  { name: "Kubernetes Developer", year: "2021", icon: "⎈", imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1920px-Kubernetes_logo_without_workmark.svg.png" },
 ];
 
 export default function Home() {
@@ -61,14 +61,14 @@ export default function Home() {
         <div className="container">
           <div className="about-copy" data-reveal>
             <p>
-              I build AI-powered products that work at scale — shipping features used by
-              thousands of people, leading engineering teams, and turning emerging technology
-              into measurable business outcomes.
+              I build at the rare intersection of technical depth and business fluency —
+              two business degrees, twelve years of engineering — leading AI teams,
+              shipping at scale, and turning emerging technology into real, lasting impact.
             </p>
             <p>
               From GenAI product development at McKinsey to cloud resiliency at Capital One
-              and emerging tech prototypes at PwC, I&apos;ve spent 12+ years at the
-              intersection of software engineering and strategic impact.
+              and emerging tech prototypes at PwC, I&apos;ve worked at the intersection
+              of software engineering and strategic impact.
             </p>
           </div>
         </div>
@@ -129,7 +129,14 @@ export default function Home() {
                 data-reveal
                 data-delay={String((i % 3) + 1)}
               >
-                <div className="cert-badge">{cert.icon}</div>
+                <div className="cert-badge">
+                  {cert.imgSrc ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={cert.imgSrc} alt={cert.name} className="cert-badge-img" />
+                  ) : (
+                    cert.icon
+                  )}
+                </div>
                 <div className="cert-name">{cert.name}</div>
                 <div className="cert-year">{cert.year}</div>
               </div>

@@ -491,7 +491,7 @@ section {
 
 .timeline-role {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   color: var(--accent);
   letter-spacing: 0.06em;
 }
@@ -503,7 +503,7 @@ section {
 
 .timeline-date {
   font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: 0.76rem;
   letter-spacing: 0.1em;
   color: var(--text-muted);
   margin-bottom: 0.5rem;
@@ -526,7 +526,7 @@ section {
 
 .timeline-bullets li {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--text-dim);
   line-height: 1.7;
   padding-left: 1.5rem;
@@ -572,7 +572,7 @@ section {
 
 .skill-cat-label {
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.72rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent);
@@ -587,7 +587,7 @@ section {
 
 .skill-tag {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
   background: rgba(79, 168, 232, 0.05);
   border: 1px solid rgba(79, 168, 232, 0.1);
@@ -640,6 +640,13 @@ section {
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
+}
+
+.cert-badge-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 6px;
 }
 
 .cert-name {
