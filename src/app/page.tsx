@@ -131,20 +131,22 @@ export default function Home() {
         <div className="container">
           <div className="about-copy" data-reveal>
             <p>
-              I&apos;m an AI product builder with a business background of both finance and information
+              I&apos;m an AI product engineer with a business background - finance and information
               systems degrees from Indiana University&apos;s Kelley School of Business, followed
-              by twelve years building software at PwC, Capital One, and McKinsey.
+              by twelve years programming and building software at PwC, Capital One, and McKinsey.
             </p>
             <p>
-              What makes my background different is the range. I&apos;ve led engineering
-              teams, but I&apos;ve also sat in user interviews, collaborated with designers, and
-              presented to executives. I understand the business context behind the tech I build,
+              I lead engineering teams, while constantly obsessing over the end user, 
+              whether that be a customer, business stakeholder, or internal teammate.
+              I credit this to years of working in the food industry in high school and college, 
+              where I learned the value of customer experience and effective teamwork early on.
+              My background enables me to understand the business and user context behind the tech I build,
               making me a more effective engineer and technical leader.
             </p>
             <p>
               Outside of work I&apos;m a husband and dad of three. 
               I exercise my competive drive through basketball and running, 
-              and my creative side playing keyboard/piano with local musicians 
+              and my creative side playing keyboard with local musicians 
               and attending open mic nights around Oak Park, IL
             </p>
           </div>
