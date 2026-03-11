@@ -559,7 +559,7 @@ section {
 }
 
 .skill-category {
-  background: var(--bg-card);
+  background: #12181F;
   border: 1px solid var(--border-subtle);
   border-radius: 4px;
   padding: 1.25rem 1.25rem 1.5rem;
@@ -577,8 +577,12 @@ section {
     0 0 0 1px rgba(79, 168, 232, 0.2),
     0 0 20px rgba(79, 168, 232, 0.12),
     0 8px 32px rgba(0, 0, 0, 0.35);
-  background: rgba(79, 168, 232, 0.06);
+  background: #12181F;
   z-index: 1;
+}
+
+.skill-category:hover .skill-tag {
+  opacity: 1;
 }
 
 .skill-cat-label {
@@ -606,7 +610,7 @@ section {
   width: 2.5rem;
   height: 2.5rem;
   color: var(--text-muted);
-  opacity: 0.55;
+  opacity: 1;
   cursor: default;
   transition: opacity 0.2s, transform 0.2s;
   outline: none;
@@ -622,7 +626,7 @@ section {
 .skill-tag::after {
   content: attr(data-tooltip);
   position: absolute;
-  bottom: calc(100% + 7px);
+  top: calc(100% + 7px);
   left: 50%;
   transform: translateX(-50%);
   background: rgba(10, 14, 20, 0.92);
@@ -649,6 +653,27 @@ section {
   height: 100%;
   object-fit: contain;
   display: block;
+}
+
+.skill-tag-logo--white-bg {
+  background: white;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.skill-tag-logo--circle-crop {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.skill-tag-logo--circle-clip {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.skill-tag-logo--crop-left {
+  object-fit: cover;
+  object-position: left center;
 }
 
 .skill-tag-placeholder {
@@ -771,7 +796,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
+  background: #12181F;
   transition: background 0.4s;
 }
 
@@ -873,6 +898,9 @@ section {
   height: 72px;
   object-fit: contain;
   display: block;
+  background: white;
+  border-radius: 50%;
+  padding: 1px;
 }
 
 .education-school {

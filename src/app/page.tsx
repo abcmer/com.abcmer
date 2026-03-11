@@ -1,92 +1,93 @@
 import ExperienceTimeline from "@/components/ExperienceTimeline";
 import AnimationInit from "@/components/AnimationInit";
 
-const skillCategories = [
+type Skill = { name: string; logo?: string; whiteBg?: boolean; circleCrop?: boolean; cropLeft?: boolean; circleClip?: boolean };
+
+const skillCategories: { label: string; skills: Skill[] }[] = [
   {
     label: "GenAI",
     skills: [
       { name: "OpenAI", logo: "/static/logos/skills/openai.png" },
-      { name: "Claude Code", logo: "/static/logos/skills/anthropic.png" },
-      { name: "Cursor", logo: "/static/logos/skills/cursor.png" },
-      { name: "Co-Pilot", logo: "/static/logos/skills/copilot.png" },
-      { name: "RAG" },
-      { name: "LangChain", logo: "/static/logos/skills/langchain.png" },
-      { name: "Bedrock", logo: "/static/logos/skills/aws-bedrock.png" },
+      { name: "Claude Code", logo: "/static/logos/skills/anthropic.png", whiteBg: true },
+      { name: "Cursor", logo: "/static/logos/skills/cursor.png", whiteBg: true },
+      { name: "Co-Pilot", logo: "https://img.icons8.com/fluent/1200/github-copilot.jpg", whiteBg: true },
+      { name: "LangChain", logo: "/static/logos/skills/langchain.png", whiteBg: true },
     ],
   },
   {
     label: "Languages",
     skills: [
-      { name: "Python", logo: "/static/logos/python.png" },
-      { name: "JavaScript", logo: "/static/logos/javascript.jpeg" },
-      { name: "Java" },
-      { name: "Go" },
+      { name: "Python", logo: "/static/logos/python.png", circleCrop: true },
+      { name: "JavaScript", logo: "/static/logos/javascript.jpeg", circleClip: true },
+      { name: "Java", logo: "https://icon2.cleanpng.com/20180404/hgq/avbgi11vf.webp", circleCrop: true },
+
     ],
   },
   {
     label: "Cloud",
     skills: [
-      { name: "AWS", logo: "/static/logos/skills/aws.png" },
-      { name: "Azure", logo: "/static/logos/skills/azure.png" },
-      { name: "GCP" },
-      { name: "Terraform" },
+      { name: "AWS", logo: "/static/logos/skills/aws.svg" },
+      { name: "Azure", logo: "/static/logos/skills/azure.svg" },
+      { name: "GCP", logo: "https://brandlogos.net/wp-content/uploads/2022/07/google_cloud-logo_brandlogos.net_qxnsy-512x512.png" },
+      { name: "Terraform", logo: "https://img.icons8.com/color/1200/terraform.jpg", circleCrop: true },
     ],
   },
   {
     label: "Frontend",
     skills: [
-      { name: "ReactJS", logo: "/static/logos/react.png" },
-      { name: "NextJS" },
-      { name: "D3.js", logo: "/static/logos/d3Js.jpeg" },
+      { name: "ReactJS", logo: "/static/logos/react.png", circleCrop: true },
+      { name: "NextJS", logo: "https://avatars.githubusercontent.com/u/126103961?s=200&v=4", circleCrop: true },
+      { name: "D3.js", logo: "https://i0.wp.com/ahex.co/wp-content/uploads/2022/06/d3.png?fit=400%2C400&ssl=1", circleCrop: true },
     ],
   },
   {
     label: "Backend",
     skills: [
-      { name: "REST" },
-      { name: "GraphQL" },
-      { name: "Microservices" },
+      { name: "REST", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU3XQkdl_6eg7k72OlY3JcGjaIAu0Vfa6Gdw&s", circleCrop: true },
+      { name: "GraphQL", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeefbmS16N_Nw0jZSh3aIfVJg7Pz9CLqcnCA&s", circleCrop: true },
+
+      { name: "NextJS", logo: "https://avatars.githubusercontent.com/u/126103961?s=200&v=4", circleCrop: true },
     ],
   },
   {
     label: "CI/CD",
     skills: [
-      { name: "GitHub", logo: "/static/logos/github.png" },
-      { name: "GitLab" },
-      { name: "Jenkins" },
-      { name: "Azure Pipelines" },
+      { name: "GitHub", logo: "/static/logos/github.png", circleCrop: true },
+      { name: "GitLab", logo: "/static/logos/skills/gitlab.svg" },
+      { name: "Jenkins", logo: "https://1000logos.net/wp-content/uploads/2024/09/Jenkins-Emblem.png", circleCrop: true },
+      { name: "Azure Pipelines", logo: "https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2018/12/vsonline_215.png", circleCrop: true },
     ],
   },
   {
     label: "Containers",
     skills: [
-      { name: "Kubernetes" },
+      { name: "Kubernetes", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/3840px-Kubernetes_logo_without_workmark.svg.png", circleCrop: true },
       { name: "Docker", logo: "/static/logos/docker.png" },
-      { name: "ECS" },
+      { name: "ECS", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVZvaaVIplwx8vguSp3dxhc7TVjgFwIqR-kA&s", circleCrop: true },
     ],
   },
   {
     label: "Database",
     skills: [
-      { name: "Postgres", logo: "/static/logos/postgres.png" },
-      { name: "MongoDB", logo: "/static/logos/mongo.png" },
-      { name: "MySQL", logo: "/static/logos/mysql.png" },
-      { name: "Redis" },
+      { name: "Postgres", logo: "/static/logos/postgres.png", circleCrop: true },
+      { name: "MongoDB", logo: "/static/logos/mongo.png", circleCrop: true },
+      { name: "MySQL", logo: "/static/logos/mysql.png", circleCrop: true },
+      { name: "Redis", logo: "/static/logos/skills/redis.png", circleCrop: true },
     ],
   },
   {
     label: "Data",
     skills: [
-      { name: "Pandas", logo: "/static/logos/pandas.png" },
-      { name: "NumPy" },
-      { name: "SQL" },
-      { name: "Spark" },
+      { name: "Pandas", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/500px-Pandas_logo.svg.png", cropLeft: true, whiteBg: true },
+      { name: "NumPy", logo: "https://raw.githubusercontent.com/numpy/numpy/main/branding/logo/logomark/numpylogoicon.svg" },
+      { name: "SQL", logo: "https://www.clipartmax.com/png/middle/275-2753287_sql-is-a-query-language-used-to-communicate-with-databases-sql-language.png", cropLeft: true, circleCrop: true },
+      { name: "Spark", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpYjJum800-sDfZz-8yznUui_7lUYzeoFOcg&s", circleCrop: true },
     ],
   },
 ];
 
 const certifications = [
-  { name: "Azure Fundamentals", year: "2023", icon: "☁", imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1920px-Microsoft_Azure.svg.png" },
+  { name: "Azure Fundamentals", year: "2023", icon: "☁", imgSrc: "/static/logos/skills/azure.svg" },
   { name: "AWS Developer Associate", year: "2022", icon: "⚡", imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1920px-Amazon_Web_Services_Logo.svg.png" },
   { name: "AWS Solutions Architect Associate", year: "2022", icon: "⚡", imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1920px-Amazon_Web_Services_Logo.svg.png" },
   { name: "HashiCorp Terraform Associate", year: "2022", icon: "⬡", imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Terraform_Logo.svg/1920px-Terraform_Logo.svg.png" },
@@ -130,19 +131,19 @@ export default function Home() {
         <div className="container">
           <div className="about-copy" data-reveal>
             <p>
-              I&apos;m an AI product engineer with a business background of both finance and information
+              I&apos;m an AI product builder with a business background of both finance and information
               systems degrees from Indiana University&apos;s Kelley School of Business, followed
               by twelve years building software at PwC, Capital One, and McKinsey.
             </p>
             <p>
               What makes my background different is the range. I&apos;ve led engineering
               teams, but I&apos;ve also sat in user interviews, collaborated with designers, and
-              presented to executives. I understand the business context behind the code I write,
+              presented to executives. I understand the business context behind the tech I build,
               making me a more effective engineer and technical leader.
             </p>
             <p>
               Outside of work I&apos;m a husband and dad of three. 
-              I flex my competive drive through basketball and running, 
+              I exercise my competive drive through basketball and running, 
               and my creative side playing keyboard/piano with local musicians 
               and attending open mic nights around Oak Park, IL
             </p>
@@ -187,7 +188,7 @@ export default function Home() {
                     >
                       {s.logo ? (
                         // eslint-disable-next-line @next/next/no-img-element
-                        <img src={s.logo} alt={s.name} className="skill-tag-logo" />
+                        <img src={s.logo} alt={s.name} className={`skill-tag-logo${s.whiteBg ? " skill-tag-logo--white-bg" : ""}${s.circleCrop ? " skill-tag-logo--circle-crop" : ""}${s.cropLeft ? " skill-tag-logo--crop-left" : ""}${s.circleClip ? " skill-tag-logo--circle-clip" : ""}`} />
                       ) : (
                         <svg className="skill-tag-placeholder" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                           <text x="20" y="18" textAnchor="middle" fontFamily="monospace" fontSize="14" fill="currentColor">&lt;/&gt;</text>
@@ -249,8 +250,8 @@ export default function Home() {
                 <div className="education-logo">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Indiana_University_seal.svg/1920px-Indiana_University_seal.svg.png"
-                    alt="Indiana University seal"
+                    src="https://theshopindy.com/cdn/shop/files/iu_logo_sticker_grande.png?v=1726596666"
+                    alt="Indiana University logo"
                     className="education-logo-img"
                   />
                 </div>
