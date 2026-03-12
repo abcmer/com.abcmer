@@ -131,16 +131,13 @@ export default function Home() {
         <div className="container">
           <div className="about-copy" data-reveal>
             <p>
-              I&apos;m an AI product engineer with a business background, earning finance and information systems degrees from Indiana University&apos;s Kelley School of Business, followed by twelve years building software at PwC, Capital One, and McKinsey. Currently I am leading a team of 10 building an AI-powered performance evaluation platform used by McKinsey&apos;s senior partners.
+              I&apos;m a full-stack AI product engineer with a business background, holding finance and information systems degrees from Indiana University&apos;s Kelley School of Business and twelve years building software at PwC, Capital One, and McKinsey. Most recently I led a team of 10 building an AI-powered performance evaluation platform used by McKinsey&apos;s senior partners.
             </p>
             <p>
               Rooted in a business education and shaped early by years in the food industry, I&apos;ve always approached engineering with the customer and the team in mind, bridging the gap between what users need and what engineering teams can build.
             </p>
             <p>
-              Outside of work I&apos;m a husband and father of three. 
-              I exercise my competitive drive through basketball, 
-              and my creative side playing keyboard with local musicians 
-              at open mic nights around Oak Park, IL
+              Outside of work I&apos;m a husband and father of three. I exercise my competitive drive through basketball and running, and my creative side playing keyboard with local musicians at open mic nights around Oak Park, IL.
             </p>
           </div>
         </div>
