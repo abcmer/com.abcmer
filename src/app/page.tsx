@@ -131,23 +131,16 @@ export default function Home() {
         <div className="container">
           <div className="about-copy" data-reveal>
             <p>
-              I&apos;m an AI product engineer with a business background - finance and information
-              systems degrees from Indiana University&apos;s Kelley School of Business, followed
-              by twelve years programming and building software at PwC, Capital One, and McKinsey.
+              I&apos;m an AI product engineer with a business background, earning finance and information systems degrees from Indiana University&apos;s Kelley School of Business, followed by twelve years building software at PwC, Capital One, and McKinsey. Currently I am leading a team of 10 building an AI-powered performance evaluation platform used by McKinsey&apos;s senior partners.
             </p>
             <p>
-              I lead engineering teams, while constantly obsessing over the end user, 
-              whether that be a customer, business stakeholder, or internal teammate.
-              I credit this to years of working in the food industry in high school and college, 
-              where I learned the value of customer experience and effective teamwork early on.
-              My background enables me to understand the business and user context behind the tech I build,
-              making me a more effective engineer and technical leader.
+              Rooted in a business education and shaped early by years in the food industry, I&apos;ve always approached engineering with the customer and the team in mind, bridging the gap between what users need and what engineering teams can build.
             </p>
             <p>
-              Outside of work I&apos;m a husband and dad of three. 
-              I exercise my competive drive through basketball and running, 
+              Outside of work I&apos;m a husband and father of three. 
+              I exercise my competitive drive through basketball, 
               and my creative side playing keyboard with local musicians 
-              and attending open mic nights around Oak Park, IL
+              at open mic nights around Oak Park, IL
             </p>
           </div>
         </div>
