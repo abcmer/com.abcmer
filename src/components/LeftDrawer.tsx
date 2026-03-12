@@ -61,7 +61,7 @@ export default function LeftDrawer({ handleDrawerOpen }: LeftDrawerProps) {
             <ListItemText primary="Projects" />
           </ListItem>
         </Link>
-        <a href="https://s3.amazonaws.com/com.abcmer.media/resume/SiemerAdam_Resume.pdf">
+        <a href="https://drive.google.com/file/d/1YYjBHRUmOd6hnl23_AdcCBHgLyH73mLu/view?usp=sharing">
           <ListItem key="resume">
             <ListItemIcon><DescriptionIcon /></ListItemIcon>
             <ListItemText primary="Resume" />
