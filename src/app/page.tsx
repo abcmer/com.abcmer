@@ -137,7 +137,7 @@ export default function Home() {
               Rooted in a business education and shaped early by years in the food industry, I&apos;ve always approached engineering with the customer and the team in mind, bridging the gap between what users need and what engineering teams can build.
             </p>
             <p>
-              Outside of work I&apos;m a husband and father of three. I exercise my competitive drive through basketball and running, and my creative side playing keyboard with local musicians at open mic nights around Oak Park, IL.
+              Outside of work I&apos;m a husband and father of three. We love family car camping trips in the summer to regional state parks, and look forward to vistiting more National Parks when the kids get a little older. I exercise my competitive drive through basketball and running, and my creative side playing keyboard with local musicians at open mic nights around Oak Park, IL.
             </p>
           </div>
         </div>
