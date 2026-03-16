@@ -321,23 +321,14 @@ section {
   margin-bottom: 3.5rem;
 }
 
-.hero-scroll {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-
-.hero-scroll-line {
-  width: 48px;
-  height: 1px;
-  background: var(--text-muted);
-  position: relative;
-  overflow: hidden;
+.scroll-progress-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: var(--accent);
+  z-index: 1000;
+  transition: width 0.1s linear;
 }
 
 .hero-scroll-line::after {

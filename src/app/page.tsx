@@ -1,5 +1,6 @@
 import ExperienceTimeline from "@/components/ExperienceTimeline";
 import AnimationInit from "@/components/AnimationInit";
+import ScrollProgress from "@/components/ScrollProgress";
 
 type Skill = { name: string; logo?: string; whiteBg?: boolean; circleCrop?: boolean; cropLeft?: boolean; circleClip?: boolean };
 
@@ -119,10 +120,7 @@ export default function Home() {
           <p className="hero-subtitle" data-reveal data-delay="1">
             Senior AI Engineer&nbsp;&nbsp;·&nbsp;&nbsp;Tech Lead&nbsp;&nbsp;·&nbsp;&nbsp;Chicago
           </p>
-          <div className="hero-scroll" data-reveal data-delay="2">
-            <div className="hero-scroll-line" />
-            <span>Scroll</span>
-          </div>
+          <ScrollProgress />
         </div>
       </section>
 
