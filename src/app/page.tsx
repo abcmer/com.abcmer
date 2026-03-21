@@ -132,7 +132,7 @@ export default function Home() {
               I&apos;m a full-stack AI product engineer with a business background, holding finance and information systems degrees from Indiana University&apos;s Kelley School of Business and 13 years building software at PwC, Capital One, and McKinsey. Most recently I led a team of 10 building an AI-powered performance evaluation platform used by McKinsey&apos;s senior partners.
             </p>
             <p>
-              Rooted in a business education and shaped early by years in the food industry, I&apos;ve always approached engineering with the customer and the team in mind, bridging the gap between what users need and what engineering teams can build.
+              My business background, combined with early years in the food industry as a server and pizza delivery driver, gives me a natural focus on the customer and the business value of what I build. It makes me a more effective technical leader, one who can translate between what the business needs, what users want, and what engineering can deliver.
             </p>
             <p>
               Outside of work I&apos;m a husband and father of three. We love family car camping trips in the summer to regional state parks, and look forward to vistiting more National Parks when the kids get a little older. I exercise my competitive drive through basketball and running, and my creative side playing keyboard with local musicians at open mic nights around Oak Park, IL.
