@@ -284,7 +284,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="contact-link"
                 >
-                  Download Resume
+                  Resume
                   <span className="contact-link-arrow">→</span>
                 </a>
               </div>
