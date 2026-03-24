@@ -118,7 +118,7 @@ export default function Home() {
             <em>Siemer</em>
           </h1>
           <p className="hero-subtitle" data-reveal data-delay="1">
-            Senior AI Engineer&nbsp;&nbsp;·&nbsp;&nbsp;Tech Lead&nbsp;&nbsp;·&nbsp;&nbsp;Chicago
+            Senior AI Product Engineer&nbsp;&nbsp;·&nbsp;&nbsp;Tech Lead&nbsp;&nbsp;·&nbsp;&nbsp;Chicago
           </p>
           <ScrollProgress />
         </div>

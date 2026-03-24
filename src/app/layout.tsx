@@ -18,14 +18,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Adam Siemer — Senior AI Engineer & Tech Lead",
+  title: "Adam Siemer — Senior AI Product Engineer & Tech Lead",
   description:
-    "Senior AI Engineer and Tech Lead based in Chicago. Shipping AI-powered products at scale. 12+ years across McKinsey, Capital One, and PwC.",
+    "Senior AI Product Engineer and Tech Lead based in Chicago. Shipping AI-powered products at scale. 12+ years across McKinsey, Capital One, and PwC.",
   metadataBase: new URL("https://adamsiemer.com"),
   openGraph: {
-    title: "Adam Siemer — Senior AI Engineer & Tech Lead",
+    title: "Adam Siemer — Senior AI Product Engineer & Tech Lead",
     description:
-      "Senior AI Engineer and Tech Lead based in Chicago. Shipping AI-powered products at scale.",
+      "Senior AI Product Engineer and Tech Lead based in Chicago. Shipping AI-powered products at scale.",
     type: "website",
     url: "https://adamsiemer.com",
     images: [
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adam Siemer — Senior AI Engineer & Tech Lead",
+    title: "Adam Siemer — Senior AI Product Engineer & Tech Lead",
     description:
-      "Senior AI Engineer and Tech Lead based in Chicago. Shipping AI-powered products at scale.",
+      "Senior AI Product Engineer and Tech Lead based in Chicago. Shipping AI-powered products at scale.",
   },
 };
 
