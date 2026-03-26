@@ -278,6 +278,15 @@ export default function Home() {
                   LinkedIn
                   <span className="contact-link-arrow">→</span>
                 </a>
+                <a
+                  href="https://drive.google.com/file/d/1YYjBHRUmOd6hnl23_AdcCBHgLyH73mLu/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-link"
+                >
+                  Resume
+                  <span className="contact-link-arrow">→</span>
+                </a>
               </div>
             </div>
             <div className="contact-right" data-reveal data-delay="2">
