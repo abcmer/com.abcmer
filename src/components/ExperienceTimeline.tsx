@@ -3,7 +3,7 @@ const EXPERIENCES = [
     company: 'McKinsey & Company',
     url: 'https://www.mckinsey.com',
     logo: '/static/logos/mckinsey-logo.svg',
-    role: 'Senior Engineer I (Jul 2022) → Senior Engineer II (Jan 2025)',
+    role: 'Senior Engineer I (Jul 2022) → Senior Engineer II (Jan 2025 - Present)',
     date: 'Jul 2022 — Present',
     bullets: [
       {

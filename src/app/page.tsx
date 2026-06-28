@@ -129,13 +129,21 @@ export default function Home() {
         <div className="container">
           <div className="about-copy" data-reveal>
             <p>
-              I&apos;m a full-stack AI product engineer with a business background, holding finance and information systems degrees from Indiana University&apos;s Kelley School of Business and 13 years building software at PwC, Capital One, and McKinsey. Most recently I led a team of 10 building an AI-powered performance evaluation platform used by McKinsey&apos;s senior partners.
+              I&apos;m an AI product engineer with a business background, holding finance and information systems degrees from Indiana University&apos;s Kelley School of Business and 13 years building software at PwC, Capital One, and McKinsey. Most recently I led a team of 10 building an AI-powered performance evaluation platform used by McKinsey&apos;s senior partners.
             </p>
             <p>
               My business background, combined with early years in the food industry as a server and pizza delivery driver, gives me a natural focus on the customer and the business value of what I build. It makes me a more effective technical leader, one who can translate between what the business needs, what users want, and what engineering can deliver.
             </p>
             <p>
-              Outside of work I&apos;m a husband and father of three. We love family car camping trips in the summer to regional state parks, and look forward to vistiting more National Parks when the kids get a little older. I exercise my competitive drive through basketball and running, and my creative side playing keyboard with local musicians at open mic nights around Oak Park, IL.
+              Outside of work I love car camping trips in the summer to National and mid-west state parks. I exercise my competitive drive through basketball and running, and my creative side playing keyboard with local musicians at open mic nights around Oak Park, IL. I&apos;ve also recently started writing about the local food scene in Chicago&apos;s near west suburbs for{" "}
+              <a
+                href="https://www.oakpark.com/author/adam-siemer/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                The Wednesday Journal
+              </a>
+              .
             </p>
           </div>
         </div>
