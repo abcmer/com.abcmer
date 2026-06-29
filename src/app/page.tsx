@@ -129,17 +129,54 @@ export default function Home() {
         <div className="container">
           <div className="about-copy" data-reveal>
             <p>
-              I&apos;m an AI product engineer with a business background, holding finance and information systems degrees from Indiana University&apos;s Kelley School of Business and 13 years building software at PwC, Capital One, and McKinsey. Most recently I led a team of 10 building an AI-powered performance evaluation platform used by McKinsey&apos;s senior partners.
+              I&apos;m an AI product engineer with two business degrees (BS Finance, MS Information Systems) from{" "}
+              <a
+                href="https://www.indiana.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-brand link-iu"
+              >
+                Indiana University
+              </a>{" "}
+              and 13 years building software at{" "}
+              <a
+                href="https://www.pwc.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-brand link-pwc"
+              >
+                PwC
+              </a>
+              ,{" "}
+              <a
+                href="https://www.capitalone.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-brand link-capitalone"
+              >
+                Capital One
+              </a>
+              , and{" "}
+              <a
+                href="https://www.mckinsey.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-brand link-mckinsey"
+              >
+                McKinsey
+              </a>
+              . Most recently I led a team of 10 building an AI-powered performance evaluation platform used by McKinsey&apos;s leadership.
             </p>
             <p>
-              My business background, combined with early years in the food industry as a server and pizza delivery driver, gives me a natural focus on the customer and the business value of what I build. It makes me a more effective technical leader, one who can translate between what the business needs, what users want, and what engineering can deliver.
+              My business background gives me a focus on the economics and motivations driving a business, while my early years as a food server gave me an instinct for the customer. That combination is rare for a software engineer and it makes me a more effective technical leader, one who can translate between what the business needs, what users want, and what engineering can deliver.
             </p>
             <p>
-              Outside of work I love car camping trips in the summer to National and mid-west state parks. I exercise my competitive drive through basketball and running, and my creative side playing keyboard with local musicians at open mic nights around Oak Park, IL. I&apos;ve also recently started writing about the local food scene in Chicago&apos;s near west suburbs for{" "}
+              Outside of work I exercise my competitive drive through basketball and running, and my creative side playing keyboard with local musicians at open mic nights around Oak Park, IL. I&apos;ve also recently started writing about the local food scene in Chicago&apos;s near west suburbs for{" "}
               <a
                 href="https://www.oakpark.com/author/adam-siemer/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="link-brand link-wj"
               >
                 The Wednesday Journal
               </a>

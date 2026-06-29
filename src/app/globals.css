@@ -53,6 +53,42 @@ a:hover {
   text-decoration: underline;
 }
 
+.link-brand {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.link-brand:hover {
+  font-weight: 600;
+}
+
+.link-iu,
+.link-iu:hover {
+  text-decoration-color: #990000;
+}
+
+.link-pwc,
+.link-pwc:hover {
+  text-decoration-color: #db4e18;
+}
+
+.link-capitalone,
+.link-capitalone:hover {
+  text-decoration-color: #004977;
+}
+
+.link-mckinsey,
+.link-mckinsey:hover {
+  text-decoration-color: #2251ff;
+}
+
+.link-wj,
+.link-wj:hover {
+  text-decoration-color: #007473;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -154,18 +190,20 @@ section {
 }
 
 .nav-name {
+  display: inline-block;
   font-family: var(--font-display);
   font-size: 1.3rem;
   font-weight: 400;
   color: var(--text);
   letter-spacing: 0.04em;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.2s, transform 0.2s;
 }
 
 .nav-name:hover {
   color: var(--accent);
   text-decoration: none;
+  transform: scale(1.05);
 }
 
 .nav-links {
