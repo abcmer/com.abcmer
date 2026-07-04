@@ -129,7 +129,7 @@ export default function Home() {
         <div className="container">
           <div className="about-copy" data-reveal>
             <p>
-              I&apos;m an AI product engineer with two business degrees (BS Finance, MS Information Systems) from{" "}
+              I&apos;m an AI product engineer with B.S. and M.S. business degrees from{" "}
               <a
                 href="https://www.indiana.edu/"
                 target="_blank"
