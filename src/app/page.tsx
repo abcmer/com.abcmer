@@ -163,7 +163,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="link-brand link-mckinsey"
               >
-                McKinsey
+                McKinsey & Company
               </a>
               . Most recently I led a team of 10 building an AI-powered performance evaluation platform used by McKinsey&apos;s leadership.
             </p>
