@@ -140,6 +140,15 @@ export default function Home() {
               </a>{" "}
               and 13 years building software at{" "}
               <a
+                href="https://www.mckinsey.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-brand link-mckinsey"
+              >
+                McKinsey & Company
+              </a>
+              ,{" "}
+              <a
                 href="https://www.pwc.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -147,7 +156,7 @@ export default function Home() {
               >
                 PwC
               </a>
-              ,{" "}
+              , and{" "}
               <a
                 href="https://www.capitalone.com/"
                 target="_blank"
@@ -156,19 +165,7 @@ export default function Home() {
               >
                 Capital One
               </a>
-              , and{" "}
-              <a
-                href="https://www.mckinsey.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="link-brand link-mckinsey"
-              >
-                McKinsey & Company
-              </a>
-              . Most recently I led a team of 10 building an AI-powered performance evaluation platform used by McKinsey&apos;s leadership.
-            </p>
-            <p>
-              My business background gives me a focus on the economics and motivations driving a business, while my early years as a food server gave me an instinct for the customer. That combination is rare for a software engineer and it makes me a more effective technical leader, one who can translate between what the business needs, what users want, and what engineering can deliver.
+              . Most recently I led a team building an AI-powered performance evaluation platform used by McKinsey&apos;s leadership.
             </p>
             <p>
               Outside of work I exercise my competitive drive through basketball and running, and my creative side playing keyboard with local musicians at open mic nights around Oak Park, IL. I&apos;ve also recently started writing about the local food scene in Chicago&apos;s near west suburbs for{" "}
